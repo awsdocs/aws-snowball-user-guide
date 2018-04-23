@@ -8,7 +8,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 A job in AWS Snowball \(Snowball\) is a discrete unit of work, defined when you create it in the console or the job management API\. Jobs have types, details, and statuses\. Each of those elements is covered in greater detail in the sections that follow\.
 
-
+**Topics**
 + [Job Types](#jobtype)
 + [Job Details](#jobdetails)
 + [Job Statuses](#job-status)
@@ -54,25 +54,15 @@ When you create an export job, you can choose to export an entire Amazon S3 buck
 ## Job Details<a name="jobdetails"></a>
 
 Each import or export job for Snowball is defined by the details that you specify when it's created\. The following list describes all the details of a job\.
-
 + **Job name** – A name for the job, containing alphanumeric characters, spaces, and any Unicode special characters\.
-
 + **Job type** – The type of job, either import or export\.
-
 + **Job ID** – A unique 39\-character label that identifies your job\. The job ID appears at the bottom of the shipping label that appears on the E Ink display, and in the name of a job's manifest file\.
-
 + **Created date** – The date that you created this job\.
-
 + **Shipping speed** – Speed options are based on region\. For more information, see [Shipping Speeds](mailing-storage.md#shippingspeeds)\.
-
 + **IAM role ARN** – This Amazon Resource Name \(ARN\) is the AWS Identity and Access Management \(IAM\) role that is created during job creation with write permissions for your Amazon S3 buckets\. The creation process is automatic, and the IAM role that you allow Snowball to assume is only used to copy your data between your Amazon S3 buckets and the Snowball\. For more information, see [Creating an IAM Role for Snowball](auth-access-control.md#create-iam-role)\.
-
 + **AWS KMS key** – In Snowball, AWS Key Management Service \(AWS KMS\) encrypts the keys on each Snowball\. When you create your job, you also choose or create an ARN for an AWS KMS encryption key that you own\. For more information, see [AWS Key Management Service in Snowball](kms.md)\.
-
 + **Snowball capacity** – In the US regions, Snowballs come in two sizes: 50 TB and 80 TB\. All other regions have the 80 TB Snowballs only\.
-
 + **Storage service** – The AWS storage service associated with this job, in this case Amazon S3\.
-
 + **Resources** – The AWS storage service resources associated with your job\. In this case, these are the Amazon S3 buckets that your data is transferred to or from\.
 
 ## Job Statuses<a name="job-status"></a>

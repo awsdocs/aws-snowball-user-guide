@@ -73,9 +73,7 @@ Experimenting in this way, using the techniques listed in [Speeding Up Data Tran
 ### Performance Considerations for HDFS Data Transfers<a name="hdfs-performance"></a>
 
 When getting ready to transfer data from a Hadoop Distributed File System \(HDFS\) cluster \(version 2\.x\) into a Snowball, we recommend that you follow the guidance in the previous section, and also the following tips:
-
 + **Don't copy the entire cluster over in a single command ** – Transferring an entire cluster in a single command can cause performance issues, including slow transfers, "flipped" bits, and missing or corrupted data on the Snowball\. We recommend that in this case you separate the data transfer into multiple parts\.
-
 + **Don't transfer a large number of small files ** – Suppose that you have a large number of files, say over 1000, and those files are small, say under 1 MB each in size\. In this case, transferring them all at once has a negative impact on your performance\. This performance degradation is due to per\-file overhead when you transfer data from HDFS clusters\. 
 
   If you must transfer a large number of small files, we recommend that you find a method of collecting them into larger archive files, and then transferring those\. However, these archives are what is imported into Amazon S3\. If you want the files in their original state, take them out of the archives after importing the archives\.

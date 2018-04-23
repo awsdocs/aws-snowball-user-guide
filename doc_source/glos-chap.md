@@ -1,6 +1,6 @@
 # AWS Glossary<a name="glos-chap"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 ### Numbers and Symbols<a name="numbers"></a>
 
@@ -9,7 +9,7 @@ A method that enables a client to see if a server can accept a request before ac
 
 ### A<a name="A"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **AAD**   
 See [additional authenticated data](#additional_authenticated_data).
@@ -44,6 +44,12 @@ See [access control list \(ACL\)](#ACL).
 **ACM**   
 See [AWS Certificate Manager \(ACM\)](#acm).
 
+**ACM PCA**   
+See [AWS Certificate Manager Private Certificate Authority \(ACM PCA\)](#acm-pca).
+
+**ACM Private CA**   
+See [AWS Certificate Manager Private Certificate Authority \(ACM PCA\)](#acm-pca).
+
 **action**<a name="action"></a>  
 An API function\. Also called *operation* or *call*\. The activity the [principal](#principal) has permission to perform\. The action is B in the statement "A has permission to do B to C where D applies\." For example, Jane sends a request to [Amazon SQS](#AmazonSimpleQueueService) with Action=ReceiveMessage\.   
 [Amazon CloudWatch](#AmazonCW): The response initiated by the change in an alarm's state: for example, from OK to ALARM\. The state change may be triggered by a metric reaching the alarm threshold, or by a SetAlarmState request\. Each alarm can have one or more actions assigned to each state\. Actions are performed once each time the alarm changes to a state that has an action assigned, such as an [Amazon Simple Notification Service](#SNS) notification, an [Auto Scaling](#AutoScaling) [policy](#policy) execution or an [Amazon EC2](#ec2) [instance](#instance) stop/terminate action\.
@@ -74,6 +80,10 @@ See also [https://aws\.amazon\.com/appstream/](https://aws.amazon.com/appstream/
 **Amazon Aurora**<a name="aurora"></a>  
 A fully managed MySQL\-compatible relational database engine that combines the speed and availability of commercial databases with the simplicity and cost\-effectiveness of open source databases\.   
 See also [https://aws\.amazon\.com/rds/aurora/](https://aws.amazon.com/rds/aurora/).
+
+**Amazon Cloud Directory \(Cloud Directory\)**<a name="clouddirectory"></a>  
+A service that provides a highly scalable directory store for your application’s multihierarchical data\.   
+See also [https://aws\.amazon\.com/cloud\-directory/](https://aws.amazon.com/cloud-directory/).
 
 **Amazon CloudFront**<a name="AmazonCF"></a>  
 An AWS content delivery service that helps you improve the performance, reliability, and availability of your websites and applications\.   
@@ -213,8 +223,12 @@ See also [https://aws\.amazon\.com/mobileanalytics](https://aws.amazon.com/mobil
 A managed message broker service for Apache ActiveMQ that makes it easy to set up and operate message brokers in the cloud\.   
 See also [https://aws\.amazon\.com/amazon\-mq/](https://aws.amazon.com/amazon-mq/).
 
+**Amazon QuickSight**<a name="quicksight"></a>  
+A fast, cloud\-powered business analytics service that makes it easy to build visualizations, perform analysis, and quickly get business insights from your data\.    
+See also [https://aws\.amazon\.com/quicksight/](https://aws.amazon.com/redshift/).
+
 **Amazon Redshift**<a name="redshift"></a>  
-A fully managed, petabyte\-scale data warehouse service in the cloud\. With Amazon Redshift you can analyze your data using your existing business intelligence tools\.   
+A fully managed, petabyte\-scale data warehouse service in the cloud\. With Amazon Redshift, you can analyze your data using your existing business intelligence tools\.   
 See also [https://aws\.amazon\.com/redshift/](https://aws.amazon.com/redshift/).
 
 **Amazon Relational Database Service \(Amazon RDS\)**<a name="AmazonRelationalDatabaseService"></a>  
@@ -296,16 +310,16 @@ See [Amazon Machine Image \(AMI\)](#AmazonMachineImage).
 
 **application**<a name="application"></a>  
 [AWS Elastic Beanstalk](#Beanstalk): A logical collection of components, including environments, versions, and environment configurations\. An application is conceptually similar to a folder\.  
-[AWS CodeDeploy](#AWSCodeDeploy): A name that uniquely identifies the application to be deployed\. AWS CodeDeploy uses this name to ensure the correct combination of revision, deployment configuration, and deployment group are referenced during a deployment\.
+[AWS CodeDeploy \(CodeDeploy\)](#AWSCodeDeploy): A name that uniquely identifies the application to be deployed\. AWS CodeDeploy uses this name to ensure the correct combination of revision, deployment configuration, and deployment group are referenced during a deployment\.
 
 **Application Billing**<a name="AppBilling"></a>  
 The location where your customers manage the Amazon DevPay products they've purchased\. The web address is [http://www\.amazon\.com/dp\-applications](http://www.amazon.com/dp-applications)\.
 
 **application revision**<a name="applicationrevision"></a>  
-[AWS CodeDeploy](#AWSCodeDeploy): An archive file containing source content—such as source code, web pages, executable files, and deployment scripts—along with an [application specification file](#applicationspecificationfile)\. Revisions are stored in [Amazon S3](#AmazonSimpleStorageService) [bucket](#bucket)s or [GitHub](#github) repositories\. For Amazon S3, a revision is uniquely identified by its Amazon S3 object key and its ETag, version, or both\. For GitHub, a revision is uniquely identified by its commit ID\.
+[AWS CodeDeploy \(CodeDeploy\)](#AWSCodeDeploy): An archive file containing source content—such as source code, web pages, executable files, and deployment scripts—along with an [application specification file](#applicationspecificationfile)\. Revisions are stored in [Amazon S3](#AmazonSimpleStorageService) [bucket](#bucket)s or [GitHub](#github) repositories\. For Amazon S3, a revision is uniquely identified by its Amazon S3 object key and its ETag, version, or both\. For GitHub, a revision is uniquely identified by its commit ID\.
 
 **application specification file**<a name="applicationspecificationfile"></a>  
-[AWS CodeDeploy](#AWSCodeDeploy): A YAML\-formatted file used to map the source files in an application revision to destinations on the instance; specify custom permissions for deployed files; and specify scripts to be run on each instance at various stages of the deployment process\.
+[AWS CodeDeploy \(CodeDeploy\)](#AWSCodeDeploy): A YAML\-formatted file used to map the source files in an application revision to destinations on the instance; specify custom permissions for deployed files; and specify scripts to be run on each instance at various stages of the deployment process\.
 
 **application version**<a name="appversion"></a>  
 [AWS Elastic Beanstalk](#Beanstalk): A specific, labeled iteration of an application that represents a functionally consistent set of deployable application code\. A version points to an [Amazon S3](#AmazonSimpleStorageService) object \(a JAVA WAR file\) that contains the application code\. 
@@ -373,6 +387,10 @@ See also [https://aws\.amazon\.com/billing/new\-user\-faqs/](https://aws.amazon.
 A web service for provisioning, managing, and deploying Secure Sockets Layer/[Transport Layer Security](#transportlayersecurity) \(SSL/TLS\) certificates for use with AWS services\.   
 See also [https://aws\.amazon\.com/certificate\-manager/](https://aws.amazon.com/certificate-manager/).
 
+**AWS Certificate Manager Private Certificate Authority \(ACM PCA\)**<a name="acm-pca"></a>  
+A hosted private certificate authority service for issuing and revoking private digital [certificate](#certificate)s\.   
+See also [https://aws\.amazon\.com/certificate\-manager/private\-certificate\-authority/](https://aws.amazon.com/certificate-manager/private-certificate-authority/).
+
 **AWS Cloud9**<a name="AWSCloud9"></a>  
 A cloud\-based integrated development environment \(IDE\) that you use to write, run, and debug code\.   
 See also [https://aws\.amazon\.com/cloud9/](https://aws.amazon.com/cloud9/).
@@ -393,7 +411,7 @@ See also [https://aws\.amazon\.com/cloudtrail/](https://aws.amazon.com/cloudtrai
 A fully managed source control service that makes it easy for companies to host secure and highly scalable private Git repositories\.   
 See also [https://aws\.amazon\.com/codecommit](https://aws.amazon.com/codecommit/).
 
-**AWS CodeDeploy**<a name="AWSCodeDeploy"></a>  
+**AWS CodeDeploy \(CodeDeploy\)**<a name="AWSCodeDeploy"></a>  
 A service that automates code deployments to any instance, including [EC2 instance](#ec2instance)s and [instance](#instance)s running on\-premises\.   
 See also [https://aws\.amazon\.com/codedeploy](https://aws.amazon.com/codedeploy/).
 
@@ -562,6 +580,10 @@ See also [https://aws\.amazon\.com/iam/](https://aws.amazon.com/iam/).
 A web service that helps organizations create and manage catalogs of IT services that are approved for use on AWS\. These IT services can include everything from virtual machine images, servers, software, and databases to complete multitier application architectures\.   
 See also [https://aws\.amazon\.com/servicecatalog/](https://aws.amazon.com/servicecatalog/).
 
+**AWS Single Sign\-On**<a name="aws-sso"></a>  
+A cloud\-based service that simplifies managing SSO access to AWS accounts and business applications\. You can control SSO access and user permissions across all your AWS accounts in AWS Organizations\.   
+See also [https://aws\.amazon\.com/single\-sign\-on/](https://aws.amazon.com/single-sign-on/).
+
 **AWS Step Functions**<a name="AWSStepFunctions"></a>  
 A web service that coordinates the components of distributed applications as a series of steps in a visual workflow\.   
 See also [https://aws\.amazon\.com/step\-functions/](https://aws.amazon.com/step-functions/).
@@ -603,7 +625,7 @@ See also [https://aws\.amazon\.com/xray/](https://aws.amazon.com/xray/).
 
 ### B<a name="B"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **basic monitoring**<a name="basicmonitor"></a>  
 Monitoring of AWS provided metrics derived at a 5\-minute frequency\.
@@ -666,7 +688,7 @@ A commonly used term for creating an [Amazon Machine Image \(AMI\)](#AmazonMachi
 
 ### C<a name="C"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **cache cluster**<a name="CacheCluster"></a>  
 A logical cache distributed over multiple [cache node](#CacheNode)s\. A cache cluster can be set up with a specific number of cache nodes\.
@@ -730,14 +752,17 @@ In machine learning, a type of problem that seeks to place \(classify\) a data s
 See also . 
 See also .
 
-**cloud service provider**<a name="cloudserviceprovider"></a>  
+**CLI**   
+See [AWS Command Line Interface \(AWS CLI\)](#awscli).
+
+**Cloud Directory**   
+See [Amazon Cloud Directory \(Cloud Directory\)](#clouddirectory).
+
+**cloud service provider \(CSP\)**<a name="cloudserviceprovider"></a>  
 A company that provides subscribers with access to internet\-hosted computing, storage, and software services\.
 
 **CloudHub**   
 See [AWS VPN CloudHub](#awsvpncloudhub).
-
-**CLI**   
-See [AWS Command Line Interface \(AWS CLI\)](#awscli).
 
 **cluster**<a name="cluster"></a>  
 A logical grouping of [container instance](#container_instance)s that you can place [task](#task)s on\.   
@@ -830,7 +855,7 @@ Core nodes run both the DataNodes and TaskTracker Hadoop daemons\.
 Also called *access credentials* or *security credentials*\. In authentication and authorization, a system uses credentials to identify who is making a call and whether to allow the requested access\. In AWS, these credentials are typically the [access key ID](#accesskeyID) and the [secret access key](#SecretAccessKey)\.
 
 **cross\-account access**<a name="crossaccountaccess"></a>  
-The process of permitting limited, controlled use of [resource](#resource)s in one AWS [account](#account) by a user in another AWS account\. For example, in [AWS CodeCommit](#AWSCodeCommit) and [AWS CodeDeploy](#AWSCodeDeploy) you can configure cross\-account access so that a user in AWS account A can access an AWS CodeCommit repository created by account B\. Or a pipeline in [AWS CodePipeline](#AWSCodePipeline) created by account A can use AWS CodeDeploy resources created by account B\. In [IAM](#IAM) you use a [role](#role) to [delegate](#delegation) temporary access to a [user](#AWSUser) in one account to resources in another\.
+The process of permitting limited, controlled use of [resource](#resource)s in one AWS [account](#account) by a user in another AWS account\. For example, in [AWS CodeCommit](#AWSCodeCommit) and [AWS CodeDeploy \(CodeDeploy\)](#AWSCodeDeploy) you can configure cross\-account access so that a user in AWS account A can access an AWS CodeCommit repository created by account B\. Or a pipeline in [AWS CodePipeline](#AWSCodePipeline) created by account A can use AWS CodeDeploy resources created by account B\. In [IAM](#IAM) you use a [role](#role) to [delegate](#delegation) temporary access to a [user](#AWSUser) in one account to resources in another\.
 
 **cross\-Region replication**<a name="cross-region-replication"></a>  
 A client\-side solution for maintaining identical copies of [Amazon DynamoDB](#dynamodb) tables across different AWS [Region](#region)s, in near real time\.
@@ -846,7 +871,7 @@ The fundamental [resource](#resource) that [AWS Key Management Service \(AWS KMS
 
 ### D<a name="D"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **dashboard**   
 See [service health dashboard](#servicehealthdashboard).
@@ -929,10 +954,10 @@ The number of email messages, sent through [Amazon SES](#SES), that were accepte
 The result of a [policy](#policy) statement that includes deny as the effect, so that a specific action or actions are expressly forbidden for a user, group, or role\. Explicit deny take precedence over explicit [allow](#allow)\. 
 
 **deployment configuration**<a name="deploymentconfiguration"></a>  
-[AWS CodeDeploy](#AWSCodeDeploy): A set of deployment rules and success and failure conditions used by the service during a deployment\.
+[AWS CodeDeploy \(CodeDeploy\)](#AWSCodeDeploy): A set of deployment rules and success and failure conditions used by the service during a deployment\.
 
 **deployment group**<a name="deploymentgroup"></a>  
-[AWS CodeDeploy](#AWSCodeDeploy): A set of individually tagged [instance](#instance)s, [EC2 instance](#ec2instance)s in [Auto Scaling group](#AutoScalingGroup)s, or both\.
+[AWS CodeDeploy \(CodeDeploy\)](#AWSCodeDeploy): A set of individually tagged [instance](#instance)s, [EC2 instance](#ec2instance)s in [Auto Scaling group](#AutoScalingGroup)s, or both\.
 
 **detailed monitoring**<a name="detailedmonitoring"></a>  
 Monitoring of AWS provided metrics derived at a 1\-minute frequency\.
@@ -987,7 +1012,7 @@ See also .
 
 ### E<a name="E"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **EBS**   
 See [Amazon Elastic Block Store \(Amazon EBS\)](#EBS).
@@ -1062,7 +1087,7 @@ The use of a master key and a data key to algorithmically protect data\. The mas
 
 **environment**<a name="environment"></a>  
 [AWS Elastic Beanstalk](#Beanstalk): A specific running instance of an [application](#application)\. The application has a CNAME and includes an application version and a customizable configuration \(which is inherited from the default container type\)\.  
-[AWS CodeDeploy](#AWSCodeDeploy): Instances in a deployment group in a blue/green deployment\. At the start of a blue/green deployment, the deployment group is made up of instances in the original environment\. At the end of the deployment, the deployment group is made up of instances in the replacement environment\.
+[AWS CodeDeploy \(CodeDeploy\)](#AWSCodeDeploy): Instances in a deployment group in a blue/green deployment\. At the start of a blue/green deployment, the deployment group is made up of instances in the original environment\. At the end of the deployment, the deployment group is made up of instances in the replacement environment\.
 
 **environment configuration**<a name="environmentconfiguration"></a>  
 A collection of parameters and settings that define how an environment and its associated resources behave\.
@@ -1119,7 +1144,7 @@ ETL tools combine these three functions to consolidate and move data from one en
 
 ### F<a name="F"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **facet**<a name="facet"></a>  
 [Amazon CloudSearch](#cloudSearch): An index field that represents a category that you want to use to refine and filter search results\.
@@ -1174,7 +1199,7 @@ A simple search query that uses approximate string matching \(fuzzy matching\) t
 
 ### G<a name="G"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **geospatial search**<a name="geospatialsearch"></a>  
 A search query that uses locations specified as a latitude and longitude to determine matches and sort the results\. 
@@ -1203,7 +1228,7 @@ A collection of [IAM](#IAM) [user](#AWSUser)s\. You can use IAM groups to simpli
 
 ### H<a name="H"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **Hadoop**<a name="Hadoop"></a>  
 Software that enables distributed processing for big data by using clusters and simple programming models\. For more information, see [http://hadoop\.apache\.org](http://hadoop.apache.org/)\.
@@ -1241,7 +1266,7 @@ See also .
 
 ### I<a name="I"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **IAM**   
 See [AWS Identity and Access Management \(IAM\)](#IAM).
@@ -1341,7 +1366,7 @@ A group of attributes that is uniquely identifiable among all of the other items
 
 ### J<a name="J"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **job flow**<a name="jobflow"></a>  
 [Amazon EMR](#AmazonElasticMapReduce): One or more [step](#step)s that specify all of the functions to be performed on the data\.
@@ -1361,7 +1386,7 @@ The location where email messages that various filters determine to be of lesser
 
 ### K<a name="K"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **key**<a name="key"></a>  
 A credential that identifies an AWS [account](#account) or [user](#AWSUser) to AWS \(such as the AWS [secret access key](#SecretAccessKey)\)\.
@@ -1384,7 +1409,7 @@ See [AWS Key Management Service \(AWS KMS\)](#AWS_KMS).
 
 ### L<a name="L"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **labeled data**<a name="labeled-data"></a>  
 In machine learning, data for which you already know the target or “correct” answer\.
@@ -1422,7 +1447,7 @@ A case\-sensitive unique string within an [AWS CloudFormation](#CloudFormation) 
 
 ### M<a name="M"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **Mail Transfer Agent \(MTA\)**<a name="mailtransferagent"></a>  
 Software that transports email messages from one computer to another by using a client\-server architecture\.
@@ -1521,7 +1546,7 @@ A cascading application that provides a simple command\-line interface for manag
 
 ### N<a name="N"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **namespace**<a name="namespace"></a>  
 An abstract container that provides context for the items \(names, or technical terms, or words\) it holds, and allows disambiguation of homonym items residing in different namespaces\.
@@ -1573,7 +1598,7 @@ The number of times that you allow Amazon Machine Learning to use the same data 
 
 ### O<a name="O"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **object**<a name="object"></a>  
 [Amazon Simple Storage Service \(Amazon S3\)](#AmazonSimpleStorageService): The fundamental entity type stored in Amazon S3\. Objects consist of object data and metadata\. The data portion is opaque to Amazon S3\.  
@@ -1618,13 +1643,11 @@ Amazon Machine Learning: An Amazon S3 location where the results of a batch pred
 
 ### P<a name="P"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **pagination**<a name="Pagination"></a>  
 The process of responding to an API request by returning a large list of records in small separate parts\. Pagination can occur in the following situations:  
-
 + The client sets the maximum number of returned records to a value below the total number of records\.
-
 + The service has a default maximum number of returned records that is lower than the total number of records\.
 When an API response is paginated, the service sends a subset of the large list of records and a pagination token that indicates that more records are available\. The client includes this pagination token in a subsequent API request, and the service responds with the next subset of records\. This continues until the service responds with a subset of records and no pagination token, indicating that all records have been sent\. 
 
@@ -1747,7 +1770,7 @@ See also .
 
 ### Q<a name="Q"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **quartile binning transformation**<a name="quartile-binning-transformation"></a>  
 Amazon Machine Learning: A process that takes two inputs, a numerical variable and a parameter called a bin number, and outputs a categorical variable\. Quartile binning transformations discover non\-linearity in a variable's distribution by enabling the machine learning model to learn separate importance values for parts of the numeric variable’s distribution\.
@@ -1768,16 +1791,13 @@ A web address that uniquely identifies a queue\.
 **quota**<a name="quota"></a>  
 [Amazon RDS](#AmazonRelationalDatabaseService): The maximum number of [DB instance](#dbinstance)s and available storage you can use\.  
 [Amazon ElastiCache](#elasticache): The maximum number of the following items:  
-
 + The number of cache clusters for each AWS [account](#account)
-
 + The number of cache nodes per cache cluster
-
 + The total number of cache nodes per AWS account across all cache clusters created by that AWS account
 
 ### R<a name="R"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **range GET**<a name="rangeGET"></a>  
 A request that specifies a byte range of data to get for a download\. If an object is large, you can break up a download into smaller units by sending multiple range GET requests that each specify a different byte range to GET\. 
@@ -1910,7 +1930,7 @@ row ID\.Amazon Machine Learning: An attribute in the input data that you can inc
 
 ### S<a name="S"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **S3**   
 See [Amazon Simple Storage Service \(Amazon S3\)](#AmazonSimpleStorageService).
@@ -2047,6 +2067,9 @@ See [SOAP](#SOAP).
 **Simple Storage Service**   
 See [Amazon Simple Storage Service \(Amazon S3\)](#AmazonSimpleStorageService).
 
+**Single Sign\-On**   
+See [AWS Single Sign\-On](#aws-sso).
+
 **Single\-AZ DB instance**<a name="singleAZ"></a>  
 A standard \(non\-Multi\-AZ\) [DB instance](#dbinstance) that is deployed in one [Availability Zone](#AZ), without a standby replica in another Availability Zone\.    
 See also .
@@ -2118,6 +2141,9 @@ See [server\-side encryption \(SSE\)](#server_side_encryption).
 **SSL**<a name="ssl"></a>  
 Secure Sockets Layer   
 See also .
+
+**SSO**   
+See [AWS Single Sign\-On](#aws-sso).
 
 **stack**<a name="stack"></a>  
 [AWS CloudFormation](#CloudFormation): A collection of AWS [resource](#resource)s that you create and delete as a single unit\.  
@@ -2211,7 +2237,7 @@ A word that is the same or nearly the same as an indexed word and that should pr
 
 ### T<a name="T"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **table**<a name="table"></a>  
 A collection of data\. Similar to other database systems, DynamoDB stores data in tables\. 
@@ -2227,7 +2253,7 @@ Tagging resources: Applying a [tag](#tag) to an AWS [resource](#resource)\.
 Amazon Machine Learning \(Amazon ML \): The attribute in the input data that contains the “correct” answers\. Amazon ML uses the target attribute to learn how to make predictions on new data\. For example, if you were building a model for predicting the sale price of a house, the target attribute would be “target sale price in USD\.”
 
 **target revision**<a name="targetrevision"></a>  
-[AWS CodeDeploy](#AWSCodeDeploy): The most recent version of the application revision that has been uploaded to the repository and will be deployed to the instances in a deployment group\. In other words, the application revision currently targeted for deployment\. This is also the revision that will be pulled for automatic deployments\.
+[AWS CodeDeploy \(CodeDeploy\)](#AWSCodeDeploy): The most recent version of the application revision that has been uploaded to the repository and will be deployed to the instances in a deployment group\. In other words, the application revision currently targeted for deployment\. This is also the revision that will be pulled for automatic deployments\.
 
 **task**<a name="task"></a>  
  An instantiation of a [task definition](#task_definition) that is running on a [container instance](#container_instance)\. 
@@ -2292,7 +2318,7 @@ A route for transmission of private network traffic that uses the internet to co
 
 ### U<a name="U"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **unbounded**<a name="unbounded"></a>  
 The number of potential occurrences is not limited by a set number\. This value is often used when defining a data type that is a list \(for example, `maxOccurs="unbounded"`\), in [WSDL](#WSDL)\.
@@ -2313,7 +2339,7 @@ A person or application under an [account](#account) that needs to make API call
 
 ### V<a name="V"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **validation**   
 See [template validation](#template-validation).
@@ -2371,7 +2397,7 @@ See [AWS VPN CloudHub](#awsvpncloudhub).
 
 ### W<a name="W"></a>
 
- [Numbers and Symbols](#numbers) | [A](#A) | [B](#B) | [C](#C) | [D](#D) | [E](#E) | [F](#F) | [G](#G) | [H](#H) | [I](#I) | [J](#J) | [K](#K) | [L](#L) | [M](#M) | [N](#N) | [O](#O) | [P](#P) | [Q](#Q) | [R](#R) | [S](#S) | [T](#T) | [U](#U) | [V](#V) | [W](#W) | [X, Y, Z](#XYZ) 
+ [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
 
 **WAM**   
 See [Amazon WorkSpaces Application Manager \(Amazon WAM\)](#wam).

@@ -48,11 +48,8 @@ This port provides 1Gbase\-TX/10Gbase\-TX operation\. It is connected via UTP ca
 
 **2\. SFP\+**  
 This port provides an SFP\+ interface compatible with both SFP\+ transceiver modules and direct\-attach copper \(DAC\) cables\. You need to provide your own transceivers or DAC cables\. Examples include:
-
 + 10Gbase\-LR \(single mode fiber\) transceiver
-
 + 10Gbase\-SR \(multi\-mode fiber\) transceiver
-
 + SFP\+ DAC cable
 
 ![\[SFP+\]](http://docs.aws.amazon.com/snowball/latest/ug/images/sfp.png)

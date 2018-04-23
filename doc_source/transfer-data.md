@@ -11,7 +11,7 @@ The following section discuss the steps involved in transferring data\. These st
 **Note**  
 You can also transfer data programmatically with the Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with the Amazon S3 Adapter for Snowball](snowball-transfer-adapter.md)\.
 
-
+**Topics**
 + [Get Your Credentials](#unlockappliance)
 + [Install the AWS Snowball Client](#download-the-client)
 + [Use the AWS Snowball Client](#transferthroughclient)

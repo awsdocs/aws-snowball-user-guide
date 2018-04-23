@@ -8,7 +8,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 Following, you'll find information on how Snowball validates data transfers, and the manual steps you can take to ensure data integrity during and after a job\.
 
-
+**Topics**
 + [Checksum Validation of Transferred Data](#snowball-checksums)
 + [Common Validation Errors](#validation-error-causes)
 + [Manual Data Validation for Snowball During Transfer](#manual-validation-device)
@@ -25,23 +25,15 @@ When these checksums don't match, we won't import the associated data into Amazo
 ## Common Validation Errors<a name="validation-error-causes"></a>
 
 Validations errors can occur\. Whenever there's a validation error, the corresponding data \(a file or a part of a large file\) is not written to the destination\. The common causes for validation errors are as follows:
-
 + Attempting to copy symbolic links\.
-
 + Attempting to copy files that are actively being modified\. This will not result in a validation error, but it will cause the checksums to not match at the end of the transfer\.
-
 + Attempting to copy whole files larger than 5 TB in size\.
-
 + Attempting to copy part sizes larger than 5 GB in size\.
-
 + Attempting to copy files to a Snowball that is already at full data storage capacity\.
-
 + Attempting to copy files to a Snowball that doesn't follow the [Object Key Naming Guidelines](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-key-guidelines) for Amazon S3\.
 
 Whenever any one of these validation errors occurs, it is logged\. You can take steps to manually identify what files failed validation and why as described in the following sections:
-
 + [Manual Data Validation for Snowball During Transfer](#manual-validation-device) – Outlines how to check for failed files while you still have the Snowball on\-premises\.
-
 + [Manual Data Validation for Snowball After Import into Amazon S3](#manual-validation-s3) – Outlines how to check for failed files after your import job into Amazon S3 has ended\.
 
 ## Manual Data Validation for Snowball During Transfer<a name="manual-validation-device"></a>
@@ -50,11 +42,8 @@ You can use manual validation to check that your data was successfully transferr
 
 **Check the failed\-files log – Snowball client**  
 When you run the Snowball client `copy` command, a log showing any files that couldn't be transferred to the Snowball is generated\. If you encounter an error during data transfer, the path for the failed\-files log will be printed to the terminal\. This log is saved as a comma\-separated values \(\.csv\) file\. Depending on your operating system, you find this log in one of the following locations:
-
 + **Windows** – `C:/Users/<username>/AppData/Local/Temp/snowball-<random-character-string>/failed-files`
-
 + **Linux** – `/tmp/snowball-<random-character-string>/failed-files`
-
 + **Mac** – `/var/folders/gf/<random-character-string>/<random-character-string>/snowball-7464536051505188504/failed-files `
 
 **Use the \-\-verbose option for the Snowball client copy command**  
@@ -62,11 +51,8 @@ When you run the Snowball client `copy` command, you can use the `--verbose` opt
 
 **Check the logs – Amazon S3 Adapter for Snowball**  
 When you run the Amazon S3 Adapter for Snowball to copy data with the AWS CLI, logs are generated\. These logs are saved in the following locations, depending on your file system:
-
 + **Windows** – `C:/Users/<username>/.aws/snowball/logs/snowball_adapter_<year_month_date_hour>`
-
 + **Linux** – `/home/.aws/snowball/logs/snowball_adapter_<year_month_date_hour>`
-
 + **Mac** – `/Users/<username>/.aws/snowball/logs/snowball_adapter_<year_month_date_hour>`
 
 **Use the \-\-stopOnError copy option**  

@@ -8,13 +8,15 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 Following, you can find information about how shipping is handled for AWS Snowball, and a list that shows each AWS Region that is supported\. The shipping rate you choose for a job applies to both sending and receiving the Snowball or Snowballs used for that job\. For information on shipping charges, see [AWS Snowball Pricing](http://aws.amazon.com/snowball/pricing)\.
 
-
+**Topics**
 + [Preparing a Snowball for Shipping](#appliance-shipping)
 + [Region\-Based Shipping Restrictions](#shipwithinregion)
 + [Shipping an AWS Snowball Appliance](mailing-storage.md)
 
-**Note**  
 When you create a job, you specify a shipping address and shipping speed\. This shipping speed doesn’t indicate how soon you can expect to receive the Snowball from the day you created the job\. It only shows the time that the appliance is in transit between AWS and your shipping address\. That time doesn’t include any time for processing\. Processing time depends on factors including job type \(exports take longer than imports, typically\) and job size \(80\-TB models take longer than 50\-TB models, typically\)\. Also, carriers generally only pick up outgoing Snowballs once a day\. Thus, processing before shipping can take a day or more\.
+
+**Note**  
+Snowball devices can only be used to import or export data within the AWS Region where the devices were ordered\.
 
 ## Preparing a Snowball for Shipping<a name="appliance-shipping"></a>
 
@@ -37,19 +39,12 @@ You don't need to pack the Snowball in a container, because it is its own physic
 ## Region\-Based Shipping Restrictions<a name="shipwithinregion"></a>
 
 Before you create a job, you should sign in to the console from the AWS Region that your Amazon S3 data is housed in\. A few shipping restrictions apply, as follows:
-
 + For data transfers in US regions, we don't ship Snowballs outside of the United States\.
-
 + We don't ship Snowballs between non\-US regions—for example, from EU \(Ireland\) to EU \(Frankfurt\), or from Asia Pacific \(Mumbai\) to Asia Pacific \(Sydney\)\.
-
 + For data transfers in Asia Pacific \(Sydney\), we only ship Snowballs within Australia\.
-
 + For data transfers in Asia Pacific \(Mumbai\), we only ship Snowballs within India\.
-
 + For data transfers in Japan, we only ship Snowballs within Japan\.
-
 + For data transfers in the EU regions, we only ship Snowballs to EU member countries listed following: Austria, Belgium, Bulgaria, Croatia, Republic of Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, and the UK\.
-
 + For data transfers in the Asia Pacific \(Singapore\) region, we only ship Snowballs to Singapore\.
 
 **Note**  

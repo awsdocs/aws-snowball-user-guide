@@ -8,7 +8,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 Following, you can find information about getting your credentials, downloading and installing the Snowball client tool, and then transferring data from the Snowball to your on\-premises data destination using the Snowball client\.
 
-
+**Topics**
 + [Get Your Credentials](#unlockexport)
 + [Install the AWS Snowball Client](#download-export)
 + [Use the AWS Snowball Client](#exporttransfer)

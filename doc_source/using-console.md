@@ -8,7 +8,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 All jobs for AWS Snowball are created and managed from either the AWS Snowball Management Console or the job management API for AWS Snowball\. The following provides an overview of how to use the AWS Snowball Management Console\.
 
-
+**Topics**
 + [Cloning an Import Job in the Console](clonejob.md)
 + [Using Export Ranges](ranges.md)
 + [Getting Your Job Completion Report and Logs in the Console](report.md)

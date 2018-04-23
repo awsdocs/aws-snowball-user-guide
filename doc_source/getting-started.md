@@ -22,7 +22,5 @@ If you already have an administrator AWS Identity and Access Management \(IAM\) 
 There is no free tier for Snowball\. To avoid unwanted charges and delays, read through the relevant import or export section following before you start creating your jobs\.
 
 **Next:**
-
 +  [Importing Data into Amazon S3 with AWS Snowball](create-import-job-steps.md)
-
 + [Exporting Data from Amazon S3 with Snowball](create-export-job-steps.md)

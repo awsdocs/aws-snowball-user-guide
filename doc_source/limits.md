@@ -39,37 +39,25 @@ The guide you're reading now is for the Snowball, which has 50 TB or 80 TB of st
 ## Limitations on Jobs in AWS Snowball<a name="job-limits"></a>
 
 The following limitations exist for creating jobs in AWS Snowball:
-
 + For security purposes, data transfers must be completed within 90 days of the Snowball being prepared\.
-
 + Currently, Snowball doesn't support server\-side encryption with AWS KMS–managed keys \(SSE\-KMS\) or server\-side encryption with customer\-provided keys \(SSE\-C\)\. Snowball does support server\-side encryption with Amazon S3–managed encryption keys \(SSE\-S3\)\. For more information on SSE\-S3, see [Protecting Data Using Server\-Side Encryption with Amazon S3\-Managed Encryption Keys \(SSE\-S3\)](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html) in the *Amazon Simple Storage Service Developer Guide\.*
-
 + In the US regions, Snowballs come in two sizes: 50 TB and 80 TB\. All other regions have the 80 TB Snowballs only\. If you're using Snowball to import data, and you need to transfer more data than will fit on a single Snowball, create additional jobs\. Each export job can use multiple Snowballs\.
-
 + The default service limit for the number of Snowballs you can have at one time is 1\. If you want to increase your service limit, contact [AWS Support](https://aws.amazon.com/premiumsupport/)\.
-
 + All objects transferred to the Snowball have their metadata changed\. The only metadata that remains the same is `filename` and `filesize`\. All other metadata is set as in the following example: `-rw-rw-r-- 1 root root [filesize] Dec 31 1969 [path/filename]`
 
 ## Limitations on Transferring On\-Premises Data with a Snowball<a name="transfer-limits"></a>
 
 The following limitations exist for transferring data to or from a Snowball appliance on\-premises:
-
 + Files must be in a static state while being copied\. Files that are modified while they are being transferred will not be imported into Amazon S3\.
-
 + Jumbo frames are not supported—that is, Ethernet frames with more than 1500 bytes of payload\.
-
 + When selecting what data to export, keep in mind that objects with trailing slashes in their names \(`/` or `\`\) will not be transferred\. Before exporting any objects with trailing slashes, update their names to remove the slash\.
-
 + When using the Amazon S3 Adapter for Snowball with the AWS CLI to transfer data, note that the `--recursive` option for the `cp` command is only supported for uploading data to a Snowball, not for transferring data from a Snowball\.
 
 ## Limitations on Shipping a Snowball<a name="shipping-limits"></a>
 
 The following limitations exist for shipping a Snowball:
-
 + AWS will not ship a Snowball to a post office box\.
-
 + AWS will not ship a Snowball between non\-US regions—for example, from EU \(Ireland\) to EU \(Frankfurt\), or from Asia Pacific \(Mumbai\) to Asia Pacific \(Sydney\)\.
-
 + Moving a Snowball to an address other than the one specified when the job was created is not allowed and is a violation of the AWS Service Terms\.
 
 For more information on shipping, see [Shipping Considerations for AWS Snowball](shipping.md)\.
@@ -77,11 +65,8 @@ For more information on shipping, see [Shipping Considerations for AWS Snowball]
 ## Limitations on Processing Your Returned Snowball for Import<a name="return-limits"></a>
 
 To connect your returned Snowball to one of our Snowball stations for import, the appliance must meet the following requirements:
-
 + The Snowball appliance must not be compromised\. Except for the two access panels in the front and the back, don't open the Snowball for any reason\.
-
 + The appliance must not be physically damaged\. You can prevent damage by closing the two panels on the Snowball until the latches make an audible clicking sound\.
-
 + The Snowball's E Ink display must be visible, and must show the return label that was automatically generated when you finished transferring your data onto the Snowball\.
 
 **Note**  

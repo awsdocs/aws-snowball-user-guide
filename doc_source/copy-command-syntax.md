@@ -17,7 +17,6 @@ snowball cp [source path] [destination path]
 When copying a directory, if you also want to copy the contents of the source directory, you use the `-r` option to recursively copy the contents\.
 
 **Syntax for Copying a File**
-
 + **Copying a file to a nonexistent destination with no trailing slash** – Copies the source file to a new file at the destination\.
 
   ```
@@ -25,7 +24,6 @@ When copying a directory, if you also want to copy the contents of the source di
   ```
 
   In the preceding example, the source file file1 is copied to the Snowball with the new file name of file2\.
-
 + **Copying a file to a nonexistent destination with a trailing slash** – Creates a new directory at the destination, and copies the file into that new directory\.
 
   ```
@@ -33,7 +31,6 @@ When copying a directory, if you also want to copy the contents of the source di
   ```
 
   In the preceding example, the dir2 directory does not exist until this command is executed\. Because `dir2/` has a trailing slash in this example, dir2 is created as a directory, and the path to file3 on the Snowball is s3://bucket\-name/dir2/file3\.
-
 + **Copying a file to an existing destination file** – Fails unless you specify the `-f` option to overwrite the existing destination file\.
 
   ```
@@ -41,7 +38,6 @@ When copying a directory, if you also want to copy the contents of the source di
   ```
 
   In the preceding example, the destination file file5 already exists before the command was executed\. By executing this command with the `-f` option, file5 is overwritten by the contents of file4, with a destination path of s3://bucket\-name/dir3/file5\.
-
 + **Copying a file to an existing destination directory** – Copies the file into the existing destination directory\.
 
   ```
@@ -51,7 +47,6 @@ When copying a directory, if you also want to copy the contents of the source di
   The preceding example copies file6 into s3://bucket\-name/dir4/\.
 **Note**  
 If file6 already exists in s3://bucket\-name/dir4/ when this command is executed, the command fails\. You can force the destination file6 to be overwritten by the source file6 by using the `snowball cp` command with the `-f` option\.
-
 + **Copying a file to a bucket on Snowball with or without a trailing slash** – Copies the file into the root level directory on the Snowball that shares the name of an Amazon S3 bucket\.
 
   ```
@@ -63,7 +58,6 @@ If file6 already exists in s3://bucket\-name/dir4/ when this command is executed
 If file7 already exists in s3://bucket\-name when this command is executed, the command fails\. You can force the destination file7 to be overwritten by the source file7 by using the `snowball cp` command with the `-f` option\.
 
 **Syntax for Copying a Directory**
-
 + **Copying a directory to a new destination with or without a trailing slash** – Specify the source path and the destination path\.
 
   ```
@@ -75,7 +69,6 @@ If file7 already exists in s3://bucket\-name when this command is executed, the 
   ```
 
   The preceding examples both do the same thing\. They both create the new directory dir2 and recursively copy the contents of dir1 to it\.
-
 + **Copying a directory to a destination directory that already exists** – Only the unique contents from the source directory make it into the destination directory, unless the `snowball cp` command is used with the `-f` option to force the entire destination directory to be overwritten\.
 
   ```
@@ -89,7 +82,6 @@ If file7 already exists in s3://bucket\-name when this command is executed, the 
   ```
 
   In the preceding example, the destination directory dir4 is overwritten with the contents in the source dir3 directory\.
-
 + **Copying a directory to a destination file that already exists** – This operation fails, unless you use the `snowball cp` command with the `-f` option\. In this case, the operation succeeds, because the destination file is overwritten with a copy of the source directory of the same name\.
 
   ```
@@ -97,7 +89,6 @@ If file7 already exists in s3://bucket\-name when this command is executed, the 
   ```
 
   In the preceding example, dir6 on the Snowball is actually a file\. Usually this command fails in this case, because the source dir5 is a directory\. However, because the `-f` is used, the file dir6 is forcibly overwritten as a directory with the contents from the source dir5\.
-
 + **Copying a directory to a bucket on a Snowball** – Specify the bucket name in the destination path\.
 
   ```

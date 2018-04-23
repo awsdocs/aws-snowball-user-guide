@@ -18,19 +18,13 @@ Every Snowball job must be authenticated\. You do this by creating and managing 
 Snowball users must have certain IAM\-related permissions to access the AWS Snowball Management Console to create jobs\. An IAM user that creates an import or export job must also have access to the right Amazon Simple Storage Service \(Amazon S3\) resources, such as the Amazon S3 buckets to be used for the job\.
 
 To use AWS Snowball Management Console, the IAM user must meet the following conditions:
-
 + The IAM account must be able to do the following: 
-
   + List all of your Amazon S3 buckets and create new ones as needed\.
-
   + Create Amazon Simple Notification Service \(Amazon SNS\) topics\.
-
   + Select AWS Key Management Service \(AWS KMS\) keys\.
-
   + Create IAM role Amazon Resource Names \(ARNs\)\.
 
   For more information on granting a user access to an Amazon S3 bucket, see [Creating an IAM User for Snowball](#create-iam-user)\.
-
 + An IAM role must be created with write permissions for your Amazon S3 buckets\. The role must also have a trust relationship with Snowball, so AWS can write the data in the Snowball to your designated Amazon S3 buckets\. The job creation wizard for each job does this step automatically; you can also do it manually\. For more information, see [Creating an IAM Role for Snowball](#create-iam-role)\.
 
 ### Creating an IAM User for Snowball<a name="create-iam-user"></a>

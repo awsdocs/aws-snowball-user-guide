@@ -24,43 +24,24 @@ By default, the adapter runs on port 8080\. You can specify a different port by 
 ## Supported AWS CLI Amazon S3 Commands<a name="using-adapter-cli-commands"></a>
 
 Following, you can find a description of the subset of AWS CLI commands and options for Amazon S3 that the AWS Snowball Edge appliance supports\. If a command or option isn't listed following, it's not supported\. You can declare some unsupported options, like `--sse` or `--storage-class`, along with a command\. However, these are ignored and have no impact on how data is imported\.
-
 + [cp](http://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) Copies a file or object to or from the Snowball\.
-
   + `--dryrun` \(boolean\) The operations that would be performed using the specified command are displayed without being run\.
-
   + `--quiet` \(boolean\) Operations performed by the specified command are not displayed\.
-
   + `--include` \(string\) Don't exclude files or objects in the command that match the specified pattern\. See [Use of Exclude and Include Filters](http://docs.aws.amazon.com/cli/latest/reference/s3/index.html#use-of-exclude-and-include-filters) in the *AWS CLI Command Reference* for details\.
-
   + `--exclude` \(string\) Exclude all files or objects from the command that matches the specified pattern\.
-
   + `--follow-symlinks | --no-follow-symlinks` \(boolean\) Symbolic links \(symlinks\) are followed only when uploading to S3 from the local file system\. Amazon S3 doesn't support symbolic links, so the contents of the link target are uploaded under the name of the link\. When neither option is specified, the default is to follow symlinks\.
-
   + `--only-show-errors` \(boolean\) Only errors and warnings are displayed\. All other output is suppressed\.
-
   + `--recursive` \(boolean\) The command is performed on all files or objects under the specified directory or prefix\. Currently, this option is only supported for uploading data to a Snowball\.
-
-  + `--storage-class` \(string\) The type of storage to use for the object\. Valid choices are: `STANDARD` | `REDUCED_REDUNDANCY` | `STANDARD_IA`\. Defaults to `STANDARD`\.
-
+  + `--storage-class` \(string\) The type of storage to use for the object\. Valid choices are: `STANDARD` \| `REDUCED_REDUNDANCY` \| `STANDARD_IA`\. Defaults to `STANDARD`\.
   + `--metadata` \(map\) A map of metadata to store with the objects in Amazon S3\. This map is applied to every object that is part of this request\. In a sync, this functionality means that files that aren't changed don't receive the new metadata\. When copying between two Amazon S3 locations, the metadata\-directive argument defaults to `REPLACE` unless otherwise specified\.
 **Important**  
 Syncing from one directory on a Snowball to another directory on the same Snowball is not supported\. Syncing from one Snowball to another Snowball is not supported\.
-
 + [ls](http://docs.aws.amazon.com/cli/latest/reference/s3/ls.html) Lists objects on the Snowball\.
-
   + `--human-readable` \(boolean\) File sizes are displayed in human\-readable format\.
-
   + `--summarize` \(boolean\) Summary information is displayed \(number of objects, total size\)\.
-
 + [rm](http://docs.aws.amazon.com/cli/latest/reference/s3/rm.html) Deletes an object on the Snowball\.
-
   + `--dryrun` \(boolean\) The operations that would be performed using the specified command are displayed without being run\.
-
   + `--include` \(string\) Don't exclude files or objects in the command that match the specified pattern\. For details, see [Use of Exclude and Include Filters](http://docs.aws.amazon.com/cli/latest/reference/s3/index.html#use-of-exclude-and-include-filters) in the *AWS CLI Command Reference*\.
-
   + `--exclude` \(string\) Exclude all files or objects from the command that matches the specified pattern\.
-
   + `--only-show-errors` \(boolean\) Only errors and warnings are displayed\. All other output is suppressed\.
-
   + `--quiet` \(boolean\) Operations performed by the specified command are not displayed\.

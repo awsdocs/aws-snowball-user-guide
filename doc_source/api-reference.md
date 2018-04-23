@@ -173,5 +173,4 @@ If the Amazon S3 buckets that you use with Snowball have bucket policies in plac
 In this policy example, we deny access to all principals except the one named in the `NotPrincipal` element\. For more information on how to use `NotPrincipal`, see [NotPrincipal](http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#NotPrincipal) in the *IAM User Guide*\.
 
 ## Related Topics<a name="api-reference-related-topics"></a>
-
 + [AWS Snowball API Reference](http://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)

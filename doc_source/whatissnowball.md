@@ -18,21 +18,13 @@ Snowball uses Snowball appliances shipped through your region's carrier\. Each S
 ## Snowball Features<a name="features"></a>
 
 Snowball with the Snowball appliance has the following features:
-
 + You can import and export data between your on\-premises data storage locations and Amazon S3\.
-
 + Snowball has an 80 TB model available in all regions, and a 50 TB model only available in the US regions\.
-
 + Encryption is enforced, protecting your data at rest and in physical transit\.
-
 + You don't have to buy or maintain your own hardware devices\.
-
 + You can manage your jobs through the AWS Snowball Management Console, or programmatically with the job management API\.
-
 + You can perform local data transfers between your on\-premises data center and a Snowball\. These transfers can be done through the Snowball client, a standalone downloadable client, or programmatically using Amazon S3 REST API calls with the downloadable Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with a Snowball](using-appliance.md#snowball-data-transfer)\.
-
 + The Snowball is its own shipping container, and its E Ink display changes to show your shipping label when the Snowball is ready to ship\. For more information, see [Shipping Considerations for AWS Snowball](shipping.md)\.
-
 + For a list of regions where the Snowball appliance is available, see [AWS Snowball](http://docs.aws.amazon.com/general/latest/gr/rande.html#snowball_region) in the * AWS General Reference*\.
 
 **Note**  
@@ -41,29 +33,19 @@ Snowball doesn't support international shipping or shipping between regions outs
 ## Prerequisites for Using AWS Snowball<a name="snowball-prereqs"></a>
 
 Before transferring data into Amazon S3 using Snowball, you should do the following:
-
 + Create an AWS account and an administrator user in AWS Identity and Access Management \(IAM\)\. For more information, see [Creating an IAM User for Snowball](auth-access-control.md#create-iam-user)\.
-
 + If you are importing data, do the following:
-
   + Confirm that the files and folders to transfer are named according to the [Object Key Naming Guidelines](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-key-guidelines) for Amazon S3\. Any files or folders with names that don't meet these guidelines won't be imported into Amazon S3\.
-
   + Plan what data you want to import into Amazon S3\. For more information, see [How to Transfer Petabytes of Data Efficiently](transfer-petabytes.md)\.
-
 + If you are exporting data, do the following:
-
   + Understand what data will be exported when you create your job\. For more information, see [Using Export Ranges](ranges.md)\.
-
   + For any files with a colon \(`:`\) in the file name, change the file names in Amazon S3 before you create the export job to get these files\. Files with a colon in the file name fail export to Microsoft Windows Server\. 
 
 ## Tools and Interfaces<a name="tools"></a>
 
 Snowball uses the AWS Snowball Management Console and the job management API for creating and managing jobs\. To perform data transfers on the Snowball appliance locally, use the Snowball client or the Amazon S3 Adapter for Snowball\. To learn more about using these in detail, see the following topics:
-
 + [Using the AWS Snowball Management Console](using-console.md)
-
 + [Using an AWS Snowball Appliance](using-appliance.md)
-
 + [Transferring Data with a Snowball](using-appliance.md#snowball-data-transfer)
 
 We also recommend that you check out the job management API for AWS Snowball\. For more information, see [AWS Snowball API Reference](http://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\.

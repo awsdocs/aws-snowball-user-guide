@@ -8,7 +8,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 When transferring petabytes of data, we recommend that you plan and calibrate your data transfer between the Snowball you have on\-site and your workstation according to the following guidelines\. Small delays or errors can significantly slow your transfers when you work with large amounts of data\.
 
-
+**Topics**
 + [Planning Your Large Transfer](#copy-general-planning)
 + [Calibrating a Large Transfer](#calibrating-large-transfer)
 + [Transferring Data in Parallel](#parallel-usage)
@@ -16,17 +16,11 @@ When transferring petabytes of data, we recommend that you plan and calibrate yo
 ## Planning Your Large Transfer<a name="copy-general-planning"></a>
 
 To plan your petabyte\-scale data transfer, we recommend the following steps:
-
 + [Step 1: Understand What You're Moving to the Cloud](#understand-the-transfer)
-
 + [Step 2: Prepare Your Workstations](#prepare-workstations)
-
 + [Step 3: Calculate Your Target Transfer Rate](#calculate-rate)
-
 + [Step 4: Determine How Many Snowballs You Need](#number-of-snowballs)
-
 + [Step 5: Create Your Jobs Using the AWS Snowball Management Console](#make-jobs)
-
 + [Step 6: Separate Your Data into Transfer Segments](#prepare-segments)
 
 ### Step 1: Understand What You're Moving to the Cloud<a name="understand-the-transfer"></a>
@@ -64,11 +58,8 @@ Now that you know how many Snowballs you need, you can create an import job for 
 ### Step 6: Separate Your Data into Transfer Segments<a name="prepare-segments"></a>
 
 As a best practice for large data transfers involving multiple jobs, we recommend that you separate your data into a number of smaller, manageable data transfer segments\. If you separate the data this way, you can transfer each segment one at a time, or multiple segments in parallel\. When planning your segments, make sure that all the sizes of the data for each segment combined fit on the Snowball for this job\. When segmenting your data transfer, take care not to copy the same files or directories multiple times\. Some examples of separating your transfer into segments are as follows:
-
 + You can make 10 segments of 4 TB each in size for a 50 TB Snowball\.
-
 + For large files, each file can be an individual segment\.
-
 + Each segment can be a different size, and each individual segment can be made of the same kind of data—for example, batched small files in one segment, large files in another segment, and so on\. This approach helps you determine your average transfer rate for different types of files\.
 
 **Note**  
@@ -99,11 +90,8 @@ When you complete these steps, you should know how quickly you can transfer data
 ## Transferring Data in Parallel<a name="parallel-usage"></a>
 
 Sometimes the fastest way to transfer data with Snowball is to transfer data in parallel\. Parallelization involves one or more of the following scenarios:
-
 + Using multiple instances of the Snowball client on a single workstation with a single Snowball
-
 + Using multiple instances of the Snowball client on multiple workstations with a single Snowball
-
 + Using multiple instances of the Snowball client on multiple workstations with multiple Snowballs
 
 If you use multiple Snowball clients with one workstation and one Snowball, you only need to run the `snowball start` command once, because you run each instance of the Snowball client from the same user account and home directory\. The same is true for the second scenario, if you transfer data using a networked file system with the same user across multiple workstations\. In any scenario, follow the guidance provided in [Planning Your Large Transfer](#copy-general-planning)\.

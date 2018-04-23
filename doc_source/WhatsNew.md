@@ -7,14 +7,13 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 # Document History<a name="WhatsNew"></a>
 
  The following table describes the important changes to the documentation since the last release of AWS Snowball\. 
-
 + ****API version: ****latest
-
-+ ****Latest document update: **** March 1, 2018
++ ****Latest document update: **** April 4, 2018
 
 
 | Change | Description | Date Changed | 
 | --- | --- | --- | 
+| India carrier change | The carrier in India is now Blue Dart\. For more information, see [Shipping Considerations for AWS Snowball](shipping.md)\. | April 4, 2018 | 
 | New AWS Region supported | AWS Snowball is now supported in the Asia Pacific \(Singapore\) region\. For more information on shipping in this AWS Region, see [Shipping Considerations for AWS Snowball](shipping.md)\. | March 1, 2018 | 
 | New AWS Region supported | AWS Snowball is now supported in the EU \(Paris\) region\. For more information on shipping in this AWS Region, see [Shipping Considerations for AWS Snowball](shipping.md)\. | December 18, 2017 | 
 | Improved transfer speed for small files | You can now automatically batch small files to improve transfer speed by using the \-\-batch option of the Snowball client copy command\. During the import process into Amazon S3, all files in batches are automatically extracted\. For more information, see [Options for the snowball cp Command](copy-command-reference.md)\. | November 14, 2017 | 

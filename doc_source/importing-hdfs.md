@@ -18,23 +18,15 @@ The `batch` option for the Snowball client's copy command is not supported for H
 ## Preparing for Transferring Your HDFS Data with the Snowball Client<a name="preparing-hdfs"></a>
 
 Before you transfer your HDFS \(version 2\.x\) data, do the following:
-
 + **Confirm the Kerberos authentication settings for your HDFS cluster** – The Snowball client supports Kerberos authentication for communicating with your HDFS in two ways: with the Kerberos login already on the host system and with authentication through specifying a principal and keytab in the `snowball cp` command\. The following HDFS/Kerberos encryption types are known to work with Snowball:
-
   + des3\-cbc\-sha1\-kd
-
   + aes\-128\-cts\-hmac\-sha1\-96
-
   + 256\-cts\-hmac\-sha1\-96
-
   + rc4\-hmac \(arcfour\-hmac\)
 
   Alternatively, you can copy from an unsecured HDFS cluster\.
-
 + **Confirm that your workstation has the Hadoop client 2\.x version installed on it** – To use the Snowball client, your workstation needs to have the Hadoop client 2\.x installed, running, and able to communicate with your HDFS 2\.x cluster\.
-
 + **Confirm the location of your site\-specific configuration files** – If you are using site\-specific configuration files, you need to use the `--hdfsconfig` parameter to pass the location of each XML file\.
-
 + **Confirm your Namenode URI** – Each HDFS 2\.x cluster has a Namenode\.core\-site\.xml file\. This file includes a `property` element with the name of `fs.defaultFS` and a value of `IP Address:port`, for example `hdfs://192.0.2.0:9000`\. You use this value, the Namenode URI, as a part of the source schema when you run Snowball client commands to perform operations on your HDFS cluster\. For more information, see [Sources for the Snowball Client Commands](using-client.md#client-source-schemas)\.
 
 **Note**  

@@ -8,7 +8,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 Following, you can find information on Snowball client commands that help you manage your data transfer into Amazon Simple Storage Service \(Amazon S3\)\. You can have multiple instances of the Snowball client in different terminal windows connected to a single Snowball\.
 
-
+**Topics**
 + [Copy Command for the Snowball Client](#snowball-cp-command)
 + [List Command for the Snowball Client](#snowball-ls-command)
 + [Make Directory Command for the Snowball Client](#snowball-mkdir-command)
@@ -25,9 +25,7 @@ Following, you can find information on Snowball client commands that help you ma
 During data transfer, at least one folder appears at the root level of the Snowball\. This folder and any others at this level have the same names as the Amazon S3 buckets that you chose when this job was created\. You can't write data to the root level of the Snowball\. All data must be written into one of the bucket folders or into their subfolders\.
 
 You can work with files or folders with spaces in their names, like `my photo.jpg` or `My Documents`\. However, make sure that you handle the spaces properly in the client commands\. For more information, see the following examples:
-
 + **Linux and Mac version of the client** – `snowball ls s3://mybucket/My\ Folder/my\ photo.jpg`
-
 + **Windows version of the client** – `snowball ls "s3://mybucket/My Documents/my photo.jpg"`
 
 **Note**  

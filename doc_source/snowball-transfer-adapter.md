@@ -31,13 +31,9 @@ To install the adapter, first download the snowball\-adapter\-*operating\_system
    If the adapter was successfully installed, its usage information appears in the terminal\.
 
 Installing the adapter also adds the snowball subdirectory to your \.aws directory\. Within this snowball directory, you can find the logs and config subdirectories\. Their contents are as follows:
-
 + The logs directory is where you find the log files for your data transfers to the Snowball through the Amazon S3 Adapter for Snowball\.
-
 + The config directory contains two files:
-
   + The snowball\-adapter\-logging\.config file contains the configuration settings for the log files written to the \~/\.aws/snowball/logs directory\.
-
   + The snowball\-adapter\.config file contains the configuration settings for the adapter itself\.
 
 **Note**  

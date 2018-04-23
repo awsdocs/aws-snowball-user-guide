@@ -9,14 +9,12 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 Following, you can find an overview of the Amazon S3 Adapter for Snowball, which allows you to programmatically transfer data between your on\-premises data center and the Snowball using Amazon S3 REST API actions\. This Amazon S3 REST API support is limited to a subset of actions, meaning that you can use the subset of supported Amazon S3 AWS CLI commands or one of the AWS SDKs to transfer data\.
 
 If your solution uses the AWS SDK for Java version 1\.11\.0 or newer, you must use the following `S3ClientOptions`:
-
 + `disableChunkedEncoding()` – Indicates that chunked encoding is not supported with the adapter\.
-
 + `setPathStyleAccess(true)` – Configures the adapter to use path\-style access for all requests\.
 
 For more information, see [Class S3ClientOptions\.Builder](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/S3ClientOptions.Builder.html) in the Amazon AppStream SDK for Java\.
 
-
+**Topics**
 + [Starting the Amazon S3 Adapter for Snowball](#start-adapter)
 + [Getting the Status of a Snowball Using the Adapter](#get-status-using-adapter)
 + [Options for the Amazon S3 Adapter for Snowball](using-adapter-options.md)
@@ -31,13 +29,9 @@ To use the Amazon S3 Adapter for Snowball, start it in a terminal on your workst
 Because the computer workstation from which or to which you make the data transfer is considered to be the bottleneck for transferring data, we highly recommend that your workstation be a powerful computer\. It should be able to meet high demands in terms of processing, memory, and networking\. For more information, see [Workstation Specifications](specifications.md#workstationspecs)\.
 
 Before you start the adapter, you need the following information:
-
 + **The Snowball's IP address** – Providing the IP address of the Snowball when you start the adapter tells the adapter where to send your transferred data\. You can get this IP address from the E Ink display on the Snowball itself\.
-
 + **The job's manifest file** – The manifest file contains important information about the job and permissions associated with it\. Without it, you won't be able to access the Snowball\. It's an encrypted file that you can download after your job enters the `WithCustomer` status\. The manifest is decrypted by the unlock code\. You can get the manifest file from the console, or programmatically from calling a job management API action\.
-
 + **The job's unlock code** – The unlock code a string of 29 characters, including 4 dashes\. It's used to decrypt the manifest\. You can get the unlock code from the [AWS Snowball Management Console](transfer-data.md#unlockappliance), or programmatically from the job management API\.
-
 + **Your AWS credentials** – Every interaction with the Snowball is signed with the AWS Signature Version 4 algorithm\. For more information, see [Signature Version 4 Signing Process](http://docs.aws.amazon.com/general/latest/gr/signature-version-4.html)\. When you start the Amazon S3 Adapter for Snowball, you specify the AWS credentials that you want to use to sign this communication\. By default, the adapter uses the credentials specified in the *home directory*/\.aws/credentials file, under the \[default\] profile\. For more information on how this Signature Version 4 algorithm works locally with the Amazon S3 Adapter for Snowball, see [Authorization with the Amazon S3 API Adapter for Snowball](auth-adapter.md)\.
 
 Once you have the preceding information, you're ready to start the adapter on your workstation\. The following procedure outlines this process\.

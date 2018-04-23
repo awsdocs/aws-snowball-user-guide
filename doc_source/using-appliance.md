@@ -54,9 +54,7 @@ You can change your IP address to a different static address, which you provide 
 ## Transferring Data with a Snowball<a name="snowball-data-transfer"></a>
 
 When locally transferring data between a Snowball and your on\-premises data center, you can use the Amazon S3 Adapter for Snowball or the Snowball client:
-
 + [Snowball client](snowball-transfer-client.md) – A standalone terminal application that you run on your local workstation to do your data transfer\. You don't need any coding knowledge to use the Snowball client\. It provides all the functionality you need to transfer data, including handling errors and writing logs to your local workstation for troubleshooting and auditing\.
-
 + [Amazon S3 Adapter for Snowball](snowball-transfer-adapter.md) – A tool that transfers data programmatically using a subset of the Amazon Simple Storage Service \(Amazon S3\) REST API, including support for AWS Command Line Interface \(AWS CLI\) commands and the Amazon S3 SDKs\.
 
 **Note**  

@@ -9,9 +9,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 Following, you can find an overview of the Snowball client, one of the tools that you can use to transfer data between your on\-premises data center and the Snowball\. The Snowball client supports transferring the following types of data to and from a Snowball\.
 
 Sources of data that can be imported with the Snowball client are as follows:
-
 + Files or objects hosted in locally mounted file systems\. 
-
 + Files or objects from a Hadoop Distributed File System \(HDFS\) cluster\. Currently, only HDFS 2\.x clusters are supported\.
 
 **Note**  
@@ -19,7 +17,7 @@ Each file or object that is imported must be less than or equal to 5 TB in size\
 
 Because the computer workstation from which or to which you make the data transfer is considered to be the bottleneck for transferring data, we highly recommend that your workstation be a powerful computer\. It should be able to meet high demands in terms of processing, memory, and networking\. For more information, see [Workstation Specifications](specifications.md#workstationspecs)\.
 
-
+**Topics**
 + [Testing Your Data Transfer with the Snowball Client](#testing-client)
 + [Authenticating the Snowball Client to Transfer Data](#setting-up-client)
 + [Schemas for Snowball Client](#using-client-schema)
@@ -112,11 +110,8 @@ In addition to source schemas, there are also destination schemas\. Currently, t
 When you transfer data between your on\-premises data centers and a Snowball, the Snowball client automatically generates a plaintext log and saves it to your workstation\. If you encounter unexpected errors during data transfer to the Snowball, make a copy of the associated log files\. Include them along with a brief description of the issues that you encountered in a message to AWS Support\.
 
 Logs are saved in the following locations, based on your workstation's operating system:
-
 + **Windows** – C:/Users/*<username>*/\.aws/snowball/logs/
-
 + **Mac** – /Users/*<username>*/\.aws/snowball/logs/
-
 + **Linux** – /home/*<username>*/\.aws/snowball/logs/
 
 Logs are saved with the file name snowball\_*<year>*\_*<month>*\_*<date>*\_*<hour>*\. The hour is based on local system time for the workstation and uses a 24\-hour clock\.

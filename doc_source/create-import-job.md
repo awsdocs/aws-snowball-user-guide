@@ -35,9 +35,7 @@ If you're performing a petabyte scale data transfer, we recommend that you read 
 1. Set security\.
 
    On this page, you specify the following:
-
    + The Amazon Resource Name \(ARN\) for the IAM role that Snowball assumes to import your data to your destination S3 bucket when you return the Snowball\.
-
    + The ARN for the AWS Key Management Service \(AWS KMS\) master key to be used to protect your data within the Snowball\. For more information, see [Security in AWS Snowball](security.md)\.
 
    Once you've finished this page, choose **Next**\.
