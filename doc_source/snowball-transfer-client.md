@@ -18,3 +18,5 @@ We recommend that you use the latest version of the Linux or Mac Snowball client
 
 **Topics**
 + [Using the Snowball Client](using-client.md)
++ [Commands for the Snowball Client](using-client-commands.md)
++ [Options for the snowball cp Command](copy-command-reference.md)

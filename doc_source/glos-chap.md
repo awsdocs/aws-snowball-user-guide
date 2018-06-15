@@ -482,6 +482,10 @@ See also [https://aws\.amazon\.com/glue](https://aws.amazon.com/glue/).
 An isolated AWS Region designed to host sensitive workloads in the cloud, ensuring that this work meets the US government's regulatory and compliance requirements\. The AWS GovCloud \(US\) Region adheres to United States International Traffic in Arms Regulations \(ITAR\), Federal Risk and Authorization Management Program \(FedRAMP\) requirements, Department of Defense \(DOD\) Cloud Security Requirements Guide \(SRG\) Levels 2 and 4, and Criminal Justice Information Services \(CJIS\) Security Policy requirements\.   
 See also [https://aws\.amazon\.com/govcloud\-us/](https://aws.amazon.com/govcloud-us/).
 
+**AWS Glue**<a name="Greengrass"></a>  
+Software that lets you run local compute, messaging, data caching, sync, and ML inference capabilities for connected devices in a secure way\.   
+See also [https://aws\.amazon\.com/greengrass](https://aws.amazon.com/greengrass/).
+
 **AWS Identity and Access Management \(IAM\)**<a name="IAM"></a>  
 A web service that enables [Amazon Web Services \(AWS\)](#amazonwebservices) customers to manage users and user permissions within AWS\.   
 See also [https://aws\.amazon\.com/iam](https://aws.amazon.com/iam/).
@@ -493,6 +497,18 @@ See also [https://aws\.amazon\.com/importexport](https://aws.amazon.com/importex
 **AWS IoT**<a name="AWSIoT"></a>  
 A managed cloud platform that lets connected devices easily and securely interact with cloud applications and other devices\.   
 See also [https://aws\.amazon\.com/iot](https://aws.amazon.com/iot/).
+
+**AWS IoT 1\-Click**<a name="AWSIoTOneClick"></a>  
+A service that enables simple devices to trigger AWS Lambda functions that can execute an action\.   
+See also [https://aws\.amazon\.com/iot\-1\-click](https://aws.amazon.com/iot-1-click/).
+
+**AWS IoT Analytics**<a name="AWSIoTAnalytics"></a>  
+A fully managed service used to run sophisticated analytics on massive volumes of IoT data\.   
+See also [https://aws\.amazon\.com/iot\-analytics](https://aws.amazon.com/iot-analytics/).
+
+**AWS IoT Device Management**<a name="AWSIoTDeviceManagement"></a>  
+A service used to securely onboard, organize, monitor, and remotely manage IoT devices at scale\.   
+See also [https://aws\.amazon\.com/iot\-device\-management](https://aws.amazon.com/iot-device-management/).
 
 **AWS Key Management Service \(AWS KMS\)**<a name="AWS_KMS"></a>  
 A managed service that simplifies the creation and control of [encryption](#encrypt) keys that are used to encrypt data\.   
@@ -587,6 +603,10 @@ See also [https://aws\.amazon\.com/single\-sign\-on/](https://aws.amazon.com/sin
 **AWS Step Functions**<a name="AWSStepFunctions"></a>  
 A web service that coordinates the components of distributed applications as a series of steps in a visual workflow\.   
 See also [https://aws\.amazon\.com/step\-functions/](https://aws.amazon.com/step-functions/).
+
+**AWS Snowball**<a name="snowball"></a>  
+A petabyte\-scale data transport solution that uses devices designed to be secure to transfer large amounts of data into and out of the AWS Cloud\.   
+See also [https://aws\.amazon\.com/snowball](https://aws.amazon.com/importexport/).
 
 **AWS Storage Gateway**<a name="storagegateway"></a>  
 A web service that connects an on\-premises software appliance with cloud\-based storage to provide seamless and secure integration between an organization’s on\-premises IT environment and AWS’s storage infrastructure\.   
@@ -2086,10 +2106,6 @@ See also .
 
 **SNS**   
 See [Amazon Simple Notification Service \(Amazon SNS\)](#SNS).
-
-**Snowball**<a name="snowball"></a>  
-An [AWS Import/Export](#AWSImportExport) feature that uses Amazon\-owned Snowball appliances for transferring your data\.   
-See also [https://aws\.amazon\.com/importexport](https://aws.amazon.com/importexport/).
 
 **SOAP**<a name="SOAP"></a>  
 Simple Object Access Protocol\. An XML\-based protocol that lets you exchange information over a particular protocol \(HTTP or SMTP, for example\) between applications\.   

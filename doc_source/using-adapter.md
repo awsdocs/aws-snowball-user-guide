@@ -17,6 +17,7 @@ For more information, see [Class S3ClientOptions\.Builder](http://docs.aws.amazo
 **Topics**
 + [Starting the Amazon S3 Adapter for Snowball](#start-adapter)
 + [Getting the Status of a Snowball Using the Adapter](#get-status-using-adapter)
++ [Unsupported Amazon S3 Features for Snowball](#snowball-s3-unsupported-features)
 + [Options for the Amazon S3 Adapter for Snowball](using-adapter-options.md)
 + [Using the Adapter with Amazon S3 Commands for the AWS CLI](using-adapter-cli.md)
 + [Supported REST API Actions](using-adapter-supported-api.md)
@@ -81,3 +82,13 @@ An example of the XML document that this request returns follows\.
     <snowballRoundTripLatencyInMillis>1</snowballRoundTripLatencyInMillis>
 </Status>
 ```
+
+## Unsupported Amazon S3 Features for Snowball<a name="snowball-s3-unsupported-features"></a>
+
+Using the Amazon S3 Adapter for Snowball, you can programmatically transfer data to and from a Snowball with Amazon S3 API actions\. However, not all Amazon S3 transfer features and API actions are supported for use with a Snowball device\. For more information on the supported features, see the following:
++ [Using the Adapter with Amazon S3 Commands for the AWS CLI](using-adapter-cli.md)
++ [Supported REST API Actions](using-adapter-supported-api.md)
+
+Any features or actions not explicitly listed in these topics are not supported\. For example, the following features and actions are not supported for use with Snowball:
++ [TransferManager](http://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples-s3-transfermanager.html) – This utility transfers files from a local environment to Amazon S3 with the SDK for Java\. Consider using the supported API actions or AWS CLI commands with the adapter instead\.
++ [GET Bucket \(List Objects\) Version 2](http://docs.aws.amazon.com/AmazonS3/latest/API/v2-RESTBucketGET.html) – This implementation of the GET action returns some or all \(up to 1,000\) of the objects in a bucket\. Consider using the [GET Bucket \(List Objects\) Version 1](http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGET.html) action or the [ls](http://docs.aws.amazon.com/cli/latest/reference/s3/ls.html) AWS CLI command\.

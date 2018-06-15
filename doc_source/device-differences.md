@@ -16,7 +16,6 @@ Following is a table that shows the different use cases for the different AWS Sn
 | Use case | Snowball | Snowball Edge | 
 | --- | --- | --- | 
 | Import data into Amazon S3 | ✓ | ✓ | 
-| Copy data directly from HDFS | ✓ |  | 
 | Export from Amazon S3 | ✓ | ✓ | 
 | Durable local storage |  | ✓ | 
 | Use in a cluster of devices |  | ✓ | 

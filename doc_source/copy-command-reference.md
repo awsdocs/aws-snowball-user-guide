@@ -19,15 +19,27 @@ Following, you can find information about `snowball cp` command options and also
 | \-r, \-\-recursive | On and set to false by default\. Recursively traverses directories during the `snowball cp` command's operation\. | 
 | \-s, \-\-stopOnError | On and set to false by default\. Stops the `snowball cp` command's operation if it encounters an error\. | 
 
-In addition to the previously defined Snowball client copy command options, there are some options specific to transferring data from an HDFS cluster\. The following table describes those options\. For more information on transferring from an HDFS cluster, see [Importing Data from HDFS](importing-hdfs.md)\.
-
 **Important**  
 The `--batch` option for the Snowball client's copy command is not supported for HDFS data transfers\. If you must transfer a large number of small files from an HDFS cluster, we recommend that you find a method of collecting them into larger archive files, and then transferring those\. However, these archives are what is imported into Amazon S3\. If you want the files in their original state, take them out of the archives after importing the archives\.
 
+## Snowball Logs<a name="snowballlogs"></a>
 
-| HDFS\-Specific Command Option | Description | 
-| --- | --- | 
-| \-\-hdfsconfig |  Used with the `hdfs://` import schema, this option sets the path to a custom XML configuration file on the server running your HDFS cluster\. This option must be repeated if you have multiple configuration files\. For example, the following specifies two configuration files\. `--hdfsconfig src/core/Namenode-site.xml --hdfsconfig /hdfs/corp/conf/hdfs-site.xml`  | 
-| \-k | On and set to false by default\. Used with the `hdfs://` import schema and the `-p` option, this option sets the path to the keytab file used to authenticate the Snowball client's connection to the HDFS cluster before copying data to a Snowball\.  You must have both the principal and the keytab registered with the Kerberos authentication server used to authenticate the HDFS cluster\. If you recently ran the `kinit` command on your terminal, then you don't need to specify this option\.   | 
-| \-n | On and set to false by default\. Used with the `hdfs://` import schema, this option copies data from a nonsecure HDFS cluster\. | 
-| \-p | On and set to false by default\. Used with the `hdfs://` import schema and the `-k` option, this option sets the principal used to authenticate the Snowball client's connection to the HDFS cluster before then copying data to a Snowball\.  You must have both the principal and the keytab registered with the Kerberos authentication server used to authenticate the HDFS cluster\. If you recently ran the `kinit` command on your terminal, then you don't need to specify this option\.  | 
+When you transfer data between your on\-premises data centers and a Snowball, the Snowball client automatically generates a plaintext log and saves it to your workstation\. If you encounter unexpected errors during data transfer to the Snowball, make a copy of the associated log files\. Include them along with a brief description of the issues that you encountered in a message to AWS Support\.
+
+Logs are saved in the following locations, based on your workstation's operating system:
++ **Windows** – C:/Users/*<username>*/\.aws/snowball/logs/
++ **Mac** – /Users/*<username>*/\.aws/snowball/logs/
++ **Linux** – /home/*<username>*/\.aws/snowball/logs/
+
+Logs are saved with the file name snowball\_*<year>*\_*<month>*\_*<date>*\_*<hour>*\. The hour is based on local system time for the workstation and uses a 24\-hour clock\.
+
+**Example Log Name**
+
+```
+snowball_2016_03_28_10.log
+```
+
+Each log has a maximum file size of 5 MB\. When a log reaches that size, a new file is generated, and the log is continued in the new file\. If additional logs start within the same hour as the old log, then the name of the first log is appended with `.1` and the second log is appended with `.2`, and so on\.
+
+**Important**  
+Logs are saved in plaintext format and contain file name and path information for the files that you transfer\. To protect this potentially sensitive information, we strongly suggest that you delete these logs once the job that the logs are associated with enters the **completed** status\.

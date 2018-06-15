@@ -58,7 +58,7 @@ The following limitations exist for transferring data to or from a Snowball appl
 The following limitations exist for shipping a Snowball:
 + AWS will not ship a Snowball to a post office box\.
 + AWS will not ship a Snowball between non\-US regions—for example, from EU \(Ireland\) to EU \(Frankfurt\), or from Asia Pacific \(Mumbai\) to Asia Pacific \(Sydney\)\.
-+ Moving a Snowball to an address other than the one specified when the job was created is not allowed and is a violation of the AWS Service Terms\.
++ Moving a AWS Snowball Edge appliance to an address outside of the country specified when the job was created is not allowed and is a violation of the AWS Service Terms\.
 
 For more information on shipping, see [Shipping Considerations for AWS Snowball](shipping.md)\.
 

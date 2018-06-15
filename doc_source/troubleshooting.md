@@ -30,7 +30,7 @@ If you encounter performance issues while transferring data to or from a Snowbal
 
   If you receive this error message, you can resolve the issue by reducing the object's key length\.
 + If you're using Linux and you can't upload files with UTF\-8 characters to a Snowball, it might be because your Linux workstation doesn't recognize UTF\-8 character encoding\. You can correct this issue by installing the `locales` package on your Linux workstation and configuring it to use one of the UTF\-8 locales like `en_US.UTF-8`\. You can configure the `locales` package by exporting the environment variable `LC_ALL`, for example: `export LC_ALL=en_US.UTF-8`
-+ If you encounter unexpected errors during data transfer to the Snowball, we want to hear about it\. Make a copy of your logs and include them along with a brief description of the issues that you encountered in a message to AWS Support\. For more information about logs, see [Snowball Logs](using-client.md#snowballlogs)\.
++ If you encounter unexpected errors during data transfer to the Snowball, we want to hear about it\. Make a copy of your logs and include them along with a brief description of the issues that you encountered in a message to AWS Support\. For more information about logs, see [Snowball Logs](copy-command-reference.md#snowballlogs)\.
 
 ## Troubleshooting Client Problems<a name="client-troubleshooting"></a>
 
@@ -50,18 +50,6 @@ When you transfer data, the copy operation first performs a precheck on the meta
 For a list of files that can't be transferred, check the terminal before data copying starts\. You can also find this list in the `<temp directory>/snowball-<random-character-string>/failed-files` file, which is saved to your Snowball client folder on the workstation\. For Windows, this temp directory would be located in `C:/Users/<username>/AppData/Local/Temp`\. For Linux and Mac, the temp directory would be located in `/tmp`\.
 
 If you discover errors when you run the `snowball validate` command, identify the files that failed the transfer, resolve the issues that the error messages report, and then transfer those files again\. If your validation command fails with the same error message, then you can use the `–f` option with the `snowball cp` command to force the copy operation and overwrite the invalid files\.
-
-### HDFS Troubleshooting<a name="hdfs-troubleshooting"></a>
-
-When setting up a data transfer from your HDFS \(version 2\.x\) cluster to a Snowball device, you may encounter Kerberos authentication errors\. This can happen if you're not using one of the verified encryption types known to work with Snowball:
-+ des3\-cbc\-sha1\-kd
-+ aes\-128\-cts\-hmac\-sha1\-96
-+ 256\-cts\-hmac\-sha1\-96
-+ rc4\-hmac \(arcfour\-hmac\)
-
-If you've encountered a Kerberos authentication issue, you can attempt to resolve it with one of the following workarounds:
-+ **Temporarily disable Kerberos** – If you disable Kerberos on your HDFS cluster, you should also disconnect any non\-essential active connections to the cluster while transferring data\. Once your transfer is complete, reactivate your Kerberos authentication\.
-+ **Use a Snowball Edge with the file interface** – The Snowball Edge provides an NFS mount point through it's file interface feature\. You could mount the Snowball Edge, and copy the files from your HDFS cluster\. For more information on using the file interface, see [Using the File Interface for the AWS Snowball Edge](http://docs.aws.amazon.com/snowball/latest/developer-guide/using-fileinterface.html) in the AWS Snowball Edge Developer Guide\. 
 
 ## Troubleshooting Adapter Problems<a name="adapter-troubleshooting"></a>
 

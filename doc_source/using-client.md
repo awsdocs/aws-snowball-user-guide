@@ -8,10 +8,6 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 Following, you can find an overview of the Snowball client, one of the tools that you can use to transfer data between your on\-premises data center and the Snowball\. The Snowball client supports transferring the following types of data to and from a Snowball\.
 
-Sources of data that can be imported with the Snowball client are as follows:
-+ Files or objects hosted in locally mounted file systems\. 
-+ Files or objects from a Hadoop Distributed File System \(HDFS\) cluster\. Currently, only HDFS 2\.x clusters are supported\.
-
 **Note**  
 Each file or object that is imported must be less than or equal to 5 TB in size\.
 
@@ -21,11 +17,6 @@ Because the computer workstation from which or to which you make the data transf
 + [Testing Your Data Transfer with the Snowball Client](#testing-client)
 + [Authenticating the Snowball Client to Transfer Data](#setting-up-client)
 + [Schemas for Snowball Client](#using-client-schema)
-+ [Importing Data from HDFS](importing-hdfs.md)
-+ [Commands for the Snowball Client](using-client-commands.md)
-+ [Options for the snowball cp Command](copy-command-reference.md)
-+ [Syntax for the snowball cp Command](copy-command-syntax.md)
-+ [Snowball Logs](#snowballlogs)
 
 ## Testing Your Data Transfer with the Snowball Client<a name="testing-client"></a>
 
@@ -94,35 +85,6 @@ The Snowball client uses schemas to define what kind of data is transferred betw
 
 Transferring file data from a local mounted file system requires that you specify the source path, in the format that works for your OS type\. For example, in the command `snowball ls C:\\User\Dan\CatPhotos s3://MyBucket/Photos/Cats`, the source schema specifies that the source data is standard file data\.
 
-For importing data directly from a Hadoop Distributed File System \(HDFS\) to a Snowball, you specify the Namenode URI as the source schema, which has the `hdfs://IP Address:port` format\. For example:
-
-```
-snowball cp -n hdfs://192.0.2.0:9000/ImportantPhotos/Cats
-s3://MyBucket/Photos/Cats
-```
-
 ### Destinations for the Snowball Client<a name="client-destination-schemas"></a>
 
 In addition to source schemas, there are also destination schemas\. Currently, the only supported destination schema is `s3://`\. For example, in the command `snowball cp -r /Logs/April s3://MyBucket/Logs`, the content in `/Logs/April` is copied recursively to the `MyBucket/Logs` location on the Snowball using the `s3://` schema\. 
-
-## Snowball Logs<a name="snowballlogs"></a>
-
-When you transfer data between your on\-premises data centers and a Snowball, the Snowball client automatically generates a plaintext log and saves it to your workstation\. If you encounter unexpected errors during data transfer to the Snowball, make a copy of the associated log files\. Include them along with a brief description of the issues that you encountered in a message to AWS Support\.
-
-Logs are saved in the following locations, based on your workstation's operating system:
-+ **Windows** – C:/Users/*<username>*/\.aws/snowball/logs/
-+ **Mac** – /Users/*<username>*/\.aws/snowball/logs/
-+ **Linux** – /home/*<username>*/\.aws/snowball/logs/
-
-Logs are saved with the file name snowball\_*<year>*\_*<month>*\_*<date>*\_*<hour>*\. The hour is based on local system time for the workstation and uses a 24\-hour clock\.
-
-**Example Log Name**
-
-```
-snowball_2016_03_28_10.log
-```
-
-Each log has a maximum file size of 5 MB\. When a log reaches that size, a new file is generated, and the log is continued in the new file\. If additional logs start within the same hour as the old log, then the name of the first log is appended with `.1` and the second log is appended with `.2`, and so on\.
-
-**Important**  
-Logs are saved in plaintext format and contain file name and path information for the files that you transfer\. To protect this potentially sensitive information, we strongly suggest that you delete these logs once the job that the logs are associated with enters the **completed** status\.
