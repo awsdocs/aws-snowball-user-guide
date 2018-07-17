@@ -20,7 +20,7 @@ Although the operation name, such as `CreateJob`, doesn't appear on the wire, th
 For information on installing and setting up the AWS CLI, including specifying what regions you want to make AWS CLI calls against, see the [AWS Command Line Interface User Guide](http://docs.aws.amazon.com/cli/latest/userguide/)\.
 
 **Note**  
-The job management API provides programmatic access to the same functionality available in the [AWS Snowball Management Console](https://console.aws.amazon.com/importexport/home?region=us-west-2), that is to create and manage jobs for Snowball\. To actually transfer data locally with a Snowball appliance, you'll need to use the Snowball client or the Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with a Snowball](using-appliance.md#snowball-data-transfer)\.
+The job management API provides programmatic access to the same functionality available in the [AWS Snowball Management Console](https://console.aws.amazon.com/importexport/home?region=us-west-2), that is to create and manage jobs for Snowball\. To actually transfer data locally with a Snowball appliance, you'll need to use the Snowball client or the Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with a Snowball](using-device.md#snowball-data-transfer)\.
 
 ## API Endpoint<a name="api-reference-endpoint"></a>
 

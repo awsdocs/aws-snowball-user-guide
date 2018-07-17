@@ -18,6 +18,8 @@ Following is a table that shows the different use cases for the different AWS Sn
 | Import data into Amazon S3 | ✓ | ✓ | 
 | Export from Amazon S3 | ✓ | ✓ | 
 | Durable local storage |  | ✓ | 
+| Local compute with AWS Lambda |  | ✓ | 
+| Amazon EC2 compute instances |  | ✓ | 
 | Use in a cluster of devices |  | ✓ | 
 | Use with AWS Greengrass \(IoT\) |  | ✓ | 
 | Transfer files through NFS with a GUI |  | ✓ | 

@@ -4,9 +4,9 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 --------
 
-# Using an AWS Snowball Appliance<a name="using-appliance"></a>
+# Using an AWS Snowball device<a name="using-device"></a>
 
-Following, you can find an overview of the Snowball appliance, the physically rugged appliance protected by AWS Key Management Service \(AWS KMS\) that you use to transfer data between your on\-premises data centers and Amazon Simple Storage Service \(Amazon S3\)\. This overview includes images of the Snowball, instructions for preparing the appliance for data transfer, and networking best practices to help optimize your data transfer\.
+Following, you can find an overview of the Snowball appliance, the physically rugged device protected by AWS Key Management Service \(AWS KMS\) that you use to transfer data between your on\-premises data centers and Amazon Simple Storage Service \(Amazon S3\)\. This overview includes images of the Snowball, instructions for preparing the device for data transfer, and networking best practices to help optimize your data transfer\.
 
 For information on transferring data to or from a Snowball, see [Transferring Data with a Snowball](#snowball-data-transfer)\.
 

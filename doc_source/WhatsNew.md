@@ -5,10 +5,16 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 --------
 
 # Document History<a name="WhatsNew"></a>
-
- The following table describes the important changes to the documentation since the last release of AWS Snowball\. 
 + ****API version: ****latest
-+ ****Latest document update: **** April 4, 2018
++ ****Latest document update:**** July 11, 2018
+
+The following table describes the important changes to the documentation since the last release of AWS Snowball after July 2018\. For notifications about documentation updates, you can subscribe to the RSS feed\.
+
+| Change | Description | Date | 
+| --- |--- |--- |
+| Improved Troubleshooting Content | The troubleshooting chapter has been updated and reorganized\. | July 11, 2018 | 
+
+The following table describes the important changes to the documentation since the last release of AWS Snowball before July 2018\.
 
 
 | Change | Description | Date Changed | 
@@ -28,5 +34,5 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 | Snowball is now available in India\. | Snowball is now available in the Asia Pacific \(Mumbai\) region\. For more information, see [Shipping Considerations for AWS Snowball](shipping.md)\.  | June 27, 2016 | 
 | Snowball is now available in new AWS Regions and has a new storage capacity option\. | Snowball is now available in the following regions; US East \(N\. Virginia\), US West \(Oregon\), US West \(N\. California\), EU \(Ireland\), Asia Pacific \(Sydney\), and AWS GovCloud \(US\)\. For more information, see [Shipping Considerations for AWS Snowball](shipping.md)\. Snowball also has a new 80 TB model available in all regions, in addition to the 50 TB model only available in the US regions\.  | April 19, 2016 | 
 | Introducing export for AWS Snowball | You can now use Snowball to export data from Amazon Simple Storage Service \(Amazon S3\)\. | February 29, 2016 | 
-| Hardware update: SFP\+ optical interface | The Snowball appliance has been updated to include a new SFP\+ optical interface that offers slightly better signal integrity over its copper counterpart but otherwise shares the same high performance\. If you received a Snowball before this date, it does not have this network interface option\. | November 18, 2015 | 
+| Hardware update: SFP\+ optical interface | The Snowball device has been updated to include a new SFP\+ optical interface that offers slightly better signal integrity over its copper counterpart but otherwise shares the same high performance\. If you received a Snowball before this date, it does not have this network interface option\. | November 18, 2015 | 
 | Introducing AWS Snowball |  AWS Snowball is a data transfer service for importing huge amounts of data into Amazon Simple Storage Service \(Amazon S3\)\. With Snowball, you can import hundreds of terabytes or petabytes of data from your on\-premises data centers into Amazon S3\.  | October 7, 2015 | 

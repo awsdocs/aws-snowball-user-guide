@@ -4,7 +4,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 --------
 
-# Receive the AWS Snowball Appliance<a name="receive-export"></a>
+# Receive the AWS Snowball device<a name="receive-export"></a>
 
 When you receive the Snowball appliance, you'll notice that it doesn't come in a box\. The Snowball is its own physically rugged shipping container\. When the Snowball first arrives, inspect it for damage or obvious tampering\. If you notice anything that looks suspicious about the Snowball, don't connect it to your internal network\. Instead, contact [AWS Support](https://aws.amazon.com/premiumsupport/) and inform us of the issue so that a new Snowball can be shipped to you\.
 
@@ -17,4 +17,4 @@ Before you connect the Snowball to your network and begin transferring data, it'
 + **Data destination** – This on\-premises device will hold the data that you want to transfer from the Snowball\. It can be a single device, such as a hard drive or USB stick, or it can be separate destinations of data within your data center\. The data destination must be mounted onto your workstation in order to transfer data to it\.
 + **Workstation** – This computer hosts your mounted data destination\. You'll use this workstation to receive data from the Snowball\. We highly recommend that your workstation be a powerful computer, able to meet high demands in terms of processing, memory, and networking\. For more information, see [Workstation Specifications](specifications.md#workstationspecs)\.
 
-**Next:** [Connect the AWS Snowball Appliance to Your Local Network](export-connect.md) 
+**Next:** [Connect the AWS Snowball device to Your Local Network](export-connect.md) 

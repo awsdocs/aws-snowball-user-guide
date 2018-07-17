@@ -61,4 +61,4 @@ For more information on managing jobs from the AWS Snowball Management Console a
 
 After you created your first import job, AWS processes the information you provided and prepares a Snowball specifically for your import job into Amazon S3\. During the processing stage, if there's an issue with your job, we contact you by email\. Otherwise, we ship a Snowball to the address you provided when you created the job\. Shipping can take a few days, but you can track the shipping status of the Snowball we prepared for your job\. In your job's details, you'll see a link to the tracking webpage with your tracking number provided\.
 
-**Next:** [Receive the AWS Snowball Appliance](receive-appliance.md) 
+**Next:** [Receive the AWS Snowball device](receive-device.md) 

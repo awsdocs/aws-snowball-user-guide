@@ -4,9 +4,9 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 --------
 
-# What Is an AWS Snowball Appliance?<a name="whatissnowball"></a>
+# What Is an AWS Snowball Device?<a name="whatissnowball"></a>
 
-AWS Snowball is a service that accelerates transferring large amounts of data into and out of AWS using physical storage appliances, bypassing the Internet\. Each AWS Snowball appliance type can transport data at faster\-than internet speeds\. This transport is done by shipping the data in the appliances through a regional carrier\. The appliances are rugged shipping containers, complete with E Ink shipping labels\.
+AWS Snowball is a service that accelerates transferring large amounts of data into and out of AWS using physical storage devices, bypassing the Internet\. Each AWS Snowball device type can transport data at faster\-than internet speeds\. This transport is done by shipping the data in the devices through a regional carrier\. The devices are rugged shipping containers, complete with E Ink shipping labels\.
 
 With a Snowball, you can transfer hundreds of terabytes or petabytes of data between your on\-premises data centers and Amazon Simple Storage Service \(Amazon S3\)\. AWS Snowball uses Snowball appliances and provides powerful interfaces that you can use to create jobs, transfer data, and track the status of your jobs through to completion\. By shipping your data in Snowballs, you can transfer large amounts of data at a significantly faster rate than if you were transferring that data over the Internet, saving you time and money\.
 
@@ -23,7 +23,7 @@ Snowball with the Snowball appliance has the following features:
 + Encryption is enforced, protecting your data at rest and in physical transit\.
 + You don't have to buy or maintain your own hardware devices\.
 + You can manage your jobs through the AWS Snowball Management Console, or programmatically with the job management API\.
-+ You can perform local data transfers between your on\-premises data center and a Snowball\. These transfers can be done through the Snowball client, a standalone downloadable client, or programmatically using Amazon S3 REST API calls with the downloadable Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with a Snowball](using-appliance.md#snowball-data-transfer)\.
++ You can perform local data transfers between your on\-premises data center and a Snowball\. These transfers can be done through the Snowball client, a standalone downloadable client, or programmatically using Amazon S3 REST API calls with the downloadable Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with a Snowball](using-device.md#snowball-data-transfer)\.
 + The Snowball is its own shipping container, and its E Ink display changes to show your shipping label when the Snowball is ready to ship\. For more information, see [Shipping Considerations for AWS Snowball](shipping.md)\.
 + For a list of regions where the Snowball appliance is available, see [AWS Snowball](http://docs.aws.amazon.com/general/latest/gr/rande.html#snowball_region) in the * AWS General Reference*\.
 
@@ -45,8 +45,8 @@ Before transferring data into Amazon S3 using Snowball, you should do the follow
 
 Snowball uses the AWS Snowball Management Console and the job management API for creating and managing jobs\. To perform data transfers on the Snowball appliance locally, use the Snowball client or the Amazon S3 Adapter for Snowball\. To learn more about using these in detail, see the following topics:
 + [Using the AWS Snowball Management Console](using-console.md)
-+ [Using an AWS Snowball Appliance](using-appliance.md)
-+ [Transferring Data with a Snowball](using-appliance.md#snowball-data-transfer)
++ [Using an AWS Snowball device](using-device.md)
++ [Transferring Data with a Snowball](using-device.md#snowball-data-transfer)
 
 We also recommend that you check out the job management API for AWS Snowball\. For more information, see [AWS Snowball API Reference](http://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\.
 
@@ -58,9 +58,9 @@ This guide assumes that you are an Amazon S3 user\.
 
 If you are a first\-time user of the Snowball service with the Snowball appliance, we recommend that you read the following sections in order:
 
-1. To learn more about the different types of jobs, see [Jobs for Standard Snowball Appliances](jobs.md)\.
+1. To learn more about the different types of jobs, see [Jobs for Standard Snowball devices](jobs.md)\.
 
-1. For an end\-to\-end overview of how Snowball works with the Snowball appliance, see [How AWS Snowball Works with the Standard Snowball Appliance](how-it-works.md)\.
+1. For an end\-to\-end overview of how Snowball works with the Snowball appliance, see [How AWS Snowball Works with the Standard Snowball device](how-it-works.md)\.
 
 1. When you're ready to get started, see [Getting Started with AWS Snowball](getting-started.md)\.
 

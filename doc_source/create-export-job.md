@@ -65,4 +65,4 @@ Once Exporting has completed, the Snowball for your job part enters the **Prepar
 
 Now that your export job is on its way, you can get from the console a report of the data transfer from Amazon S3 to the Snowball, and also success and failure logs\. To access the report or the logs, select the job from the table, and expand it to reveal the job's detailed information\. Choose **Get report** to download your job report\. For more information, see [Getting Your Job Completion Report and Logs in the Console](report.md)\.
 
-**Next:** [Receive the AWS Snowball Appliance](receive-export.md) 
+**Next:** [Receive the AWS Snowball device](receive-export.md) 

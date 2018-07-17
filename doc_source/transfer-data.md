@@ -12,18 +12,18 @@ The following section discuss the steps involved in transferring data\. These st
 You can also transfer data programmatically with the Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with the Amazon S3 Adapter for Snowball](snowball-transfer-adapter.md)\.
 
 **Topics**
-+ [Get Your Credentials](#unlockappliance)
++ [Get Your Credentials](#unlockdevice)
 + [Install the AWS Snowball Client](#download-the-client)
 + [Use the AWS Snowball Client](#transferthroughclient)
 + [Stop the AWS Snowball Client, and Power Off the Snowball](#turnitoff)
-+ [Disconnect the Appliance](#disconnectappliance)
++ [Disconnect the device](#disconnectdevice)
 
-## Get Your Credentials<a name="unlockappliance"></a>
+## Get Your Credentials<a name="unlockdevice"></a>
 
 Each AWS Snowball job has a set of credentials that you must get from the AWS Snowball Management Console or the job management API to authenticate your access to the Snowball\. These credentials are an encrypted manifest file and an unlock code\. The manifest file contains important information about the job and permissions associated with it\. Without it, you won't be able to transfer data\. The unlock code is used to decrypt the manifest\. Without it, you won't be able to communicate with the Snowball\.
 
 **Note**  
-You can only get your credentials after the Snowball appliance has been delivered to you\. After the appliance has been returned to AWS, the credentials for your job are no longer available\.
+You can only get your credentials after the Snowball device has been delivered to you\. After the device has been returned to AWS, the credentials for your job are no longer available\.
 
 **To get your credentials by using the console**
 
@@ -81,7 +81,7 @@ For more information on using the Snowball client tool, see [Using the Snowball 
 
 When you've finished transferring data on to the Snowball, prepare it for its return trip to AWS\. To prepare it, run the `snowball stop` command in the terminal of your workstation\. Running this command stops all communication to the Snowball from your workstation and performs local cleanup operations in the background\. When that command has finished, power off the Snowball by pressing the power button above the E Ink display\.
 
-## Disconnect the Appliance<a name="disconnectappliance"></a>
+## Disconnect the device<a name="disconnectdevice"></a>
 
 Disconnect the Snowball cables\. Secure the Snowball's cables into the cable caddie on the inside of the Snowball back panel and seal the Snowball\. When the return shipping label appears on the Snowball's E Ink display, you're ready to drop it off with your region's carrier to be shipped back to AWS\. To see who your region's carrier is, see [Shipping Carriers](mailing-storage.md#carriers)\.
 
@@ -90,4 +90,4 @@ Don't delete your local copies of the transferred data until the import into Ama
 
 **Next:**
 
-[Return the Appliance](return-appliance.md) 
+[Return the device](return-device.md) 

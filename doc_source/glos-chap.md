@@ -482,7 +482,7 @@ See also [https://aws\.amazon\.com/glue](https://aws.amazon.com/glue/).
 An isolated AWS Region designed to host sensitive workloads in the cloud, ensuring that this work meets the US government's regulatory and compliance requirements\. The AWS GovCloud \(US\) Region adheres to United States International Traffic in Arms Regulations \(ITAR\), Federal Risk and Authorization Management Program \(FedRAMP\) requirements, Department of Defense \(DOD\) Cloud Security Requirements Guide \(SRG\) Levels 2 and 4, and Criminal Justice Information Services \(CJIS\) Security Policy requirements\.   
 See also [https://aws\.amazon\.com/govcloud\-us/](https://aws.amazon.com/govcloud-us/).
 
-**AWS Glue**<a name="Greengrass"></a>  
+**AWS Greengrass**<a name="Greengrass"></a>  
 Software that lets you run local compute, messaging, data caching, sync, and ML inference capabilities for connected devices in a secure way\.   
 See also [https://aws\.amazon\.com/greengrass](https://aws.amazon.com/greengrass/).
 

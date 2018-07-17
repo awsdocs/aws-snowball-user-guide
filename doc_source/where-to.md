@@ -8,8 +8,8 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 Now that you've read through the getting started section and begun your first data transfer job, you can learn more about using the Snowball tools and interfaces detail from the following topics:
 + [Using the AWS Snowball Management Console](using-console.md)
-+ [Using an AWS Snowball Appliance](using-appliance.md)
-+ [Transferring Data with a Snowball](using-appliance.md#snowball-data-transfer)
++ [Using an AWS Snowball device](using-device.md)
++ [Transferring Data with a Snowball](using-device.md#snowball-data-transfer)
 
 We also recommend that you checkout the job management API for AWS Snowball\. For more information, see [AWS Snowball API Reference](http://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)
 

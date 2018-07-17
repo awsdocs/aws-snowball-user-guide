@@ -63,7 +63,7 @@ Before you can transfer data with your downloaded and installed Snowball client,
 
    1. Get the unlock code, a 29\-character code that also appears when you download your manifest\. We recommend that you write it down and keep it in a separate location from the manifest that you downloaded, to prevent unauthorized access to the Snowball while it’s at your facility\.
 
-1. Locate the IP address for the Snowball on the Snowball's E Ink display\. When the Snowball is connected to your network for the first time, it automatically creates a DHCP IP address\. If you want to use a different IP address, you can change it from the E Ink display\. For more information, see [Using an AWS Snowball Appliance](using-appliance.md)\.
+1. Locate the IP address for the Snowball on the Snowball's E Ink display\. When the Snowball is connected to your network for the first time, it automatically creates a DHCP IP address\. If you want to use a different IP address, you can change it from the E Ink display\. For more information, see [Using an AWS Snowball device](using-device.md)\.
 
 1. Execute the `snowball start` command to authenticate your access to the Snowball with the Snowball's IP address and your credentials, as follows:
 

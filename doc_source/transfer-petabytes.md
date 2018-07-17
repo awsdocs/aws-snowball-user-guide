@@ -53,7 +53,7 @@ Using the total amount of data you're going to move into the cloud, found in ste
 
 ### Step 5: Create Your Jobs Using the AWS Snowball Management Console<a name="make-jobs"></a>
 
-Now that you know how many Snowballs you need, you can create an import job for each appliance\. Because each Snowball import job involves a single Snowball, you create multiple import jobs\. For more information, see [Create an Import Job](create-import-job.md)\.
+Now that you know how many Snowballs you need, you can create an import job for each device\. Because each Snowball import job involves a single Snowball, you create multiple import jobs\. For more information, see [Create an Import Job](create-import-job.md)\.
 
 ### Step 6: Separate Your Data into Transfer Segments<a name="prepare-segments"></a>
 

@@ -10,8 +10,8 @@ The process for importing data into Amazon S3 with Snowball has the following st
 
 **Topics**
 + [Create an Import Job](create-import-job.md)
-+ [Receive the AWS Snowball Appliance](receive-appliance.md)
-+ [Connect the AWS Snowball Appliance to Your Local Network](getting-started-connect.md)
++ [Receive the AWS Snowball device](receive-device.md)
++ [Connect the AWS Snowball device to Your Local Network](getting-started-connect.md)
 + [Transfer Data](transfer-data.md)
-+ [Return the Appliance](return-appliance.md)
++ [Return the device](return-device.md)
 + [Monitor the Import Status](monitor-status.md)

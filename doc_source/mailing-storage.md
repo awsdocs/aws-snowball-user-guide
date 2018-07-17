@@ -4,7 +4,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 --------
 
-# Shipping an AWS Snowball Appliance<a name="mailing-storage"></a>
+# Shipping an AWS Snowball device<a name="mailing-storage"></a>
 
 The prepaid shipping label contains the correct address to return the Snowball\. For information on how to return your Snowball, see [Shipping Carriers](#carriers)\. The Snowball is delivered to an AWS sorting facility and forwarded to the AWS data center\. Package tracking is available through your region's carrier\. You can track status changes for your job by using the AWS Snowball Management Console\.
 

@@ -12,14 +12,14 @@ Following, you can find information about getting your credentials, downloading 
 + [Get Your Credentials](#unlockexport)
 + [Install the AWS Snowball Client](#download-export)
 + [Use the AWS Snowball Client](#exporttransfer)
-+ [Disconnect the AWS Snowball Appliance](#disconnectexport)
++ [Disconnect the AWS Snowball device](#disconnectexport)
 
 ## Get Your Credentials<a name="unlockexport"></a>
 
 Each AWS Snowball job has a set of credentials that you must get to authenticate your access to the Snowball\. These credentials are an encrypted manifest file and an unlock code\. The manifest file contains important information about the job and permissions associated with it\. Without it, you won't be able to transfer data\. The unlock code is used to decrypt the manifest\. Without it, the you won't be able to communicate with the Snowball\.
 
 **Note**  
-You can only get your credentials after the Snowball appliance has been delivered to you\.
+You can only get your credentials after the Snowball device has been delivered to you\.
 
 **To get your credentials from the console**
 
@@ -72,7 +72,7 @@ snowball cp --recursive s3://MyBucket/Logs /Logs/April
 
 Use the Snowball client commands to finish transferring your data from the Snowball\. For more information on using the Snowball client, see [Using the Snowball Client](using-client.md)\. 
 
-## Disconnect the AWS Snowball Appliance<a name="disconnectexport"></a>
+## Disconnect the AWS Snowball device<a name="disconnectexport"></a>
 
 When you've finished transferring data from the Snowball, prepare it for its return trip to AWS\. First, disconnect the Snowball cables\. Secure the Snowball's cables into the cable caddie on the inside of the Snowball back panel, and then seal the Snowball\.
 
@@ -80,4 +80,4 @@ When the return shipping label appears on the Snowball's E Ink display, it's rea
 
 **Next:**
 
- [Return the Appliance](return-export.md) 
+ [Return the device](return-export.md) 

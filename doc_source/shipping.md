@@ -9,16 +9,16 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 Following, you can find information about how shipping is handled for AWS Snowball, and a list that shows each AWS Region that is supported\. The shipping rate you choose for a job applies to both sending and receiving the Snowball or Snowballs used for that job\. For information on shipping charges, see [AWS Snowball Pricing](http://aws.amazon.com/snowball/pricing)\.
 
 **Topics**
-+ [Preparing a Snowball for Shipping](#appliance-shipping)
++ [Preparing a Snowball for Shipping](#device-shipping)
 + [Region\-Based Shipping Restrictions](#shipwithinregion)
-+ [Shipping an AWS Snowball Appliance](mailing-storage.md)
++ [Shipping an AWS Snowball device](mailing-storage.md)
 
-When you create a job, you specify a shipping address and shipping speed\. This shipping speed doesn’t indicate how soon you can expect to receive the Snowball from the day you created the job\. It only shows the time that the appliance is in transit between AWS and your shipping address\. That time doesn’t include any time for processing\. Processing time depends on factors including job type \(exports take longer than imports, typically\) and job size \(80\-TB models take longer than 50\-TB models, typically\)\. Also, carriers generally only pick up outgoing Snowballs once a day\. Thus, processing before shipping can take a day or more\.
+When you create a job, you specify a shipping address and shipping speed\. This shipping speed doesn’t indicate how soon you can expect to receive the Snowball from the day you created the job\. It only shows the time that the device is in transit between AWS and your shipping address\. That time doesn’t include any time for processing\. Processing time depends on factors including job type \(exports take longer than imports, typically\) and job size \(80\-TB models take longer than 50\-TB models, typically\)\. Also, carriers generally only pick up outgoing Snowballs once a day\. Thus, processing before shipping can take a day or more\.
 
 **Note**  
 Snowball devices can only be used to import or export data within the AWS Region where the devices were ordered\.
 
-## Preparing a Snowball for Shipping<a name="appliance-shipping"></a>
+## Preparing a Snowball for Shipping<a name="device-shipping"></a>
 
 The following explains how to prepare a Snowball appliance and ship it back to AWS\.
 

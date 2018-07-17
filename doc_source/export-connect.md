@@ -4,7 +4,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 --------
 
-# Connect the AWS Snowball Appliance to Your Local Network<a name="export-connect"></a>
+# Connect the AWS Snowball device to Your Local Network<a name="export-connect"></a>
 
 In this step, you'll connect the Snowball to your network\. The Snowball appliance has two panels, a front and a back, which are opened by latches and flipped up to rest on the top of the Snowball\. Open the front panel first, flip it on top of the Snowball, and then open the back panel, flipping it up to rest on the first\. Doing this gives you access to the touch screen on the E Ink display embedded in the front side of the Snowball, and the power and network ports in the back\.
 
@@ -19,7 +19,7 @@ We recommend that you set up your network connections so that there are as few h
 1. When the Snowball is ready, the E Ink display shows the following screen\.  
 ![\[The Snowball is ready.\]](http://docs.aws.amazon.com/snowball/latest/ug/images/digitaldisplayready.png)
 
-   At this point, you can change the default network settings through the E Ink display by choosing **Network**\. To learn more about specifying network settings for the Snowball, see [Changing Your IP Address](using-appliance.md#snowballnetwork)\.
+   At this point, you can change the default network settings through the E Ink display by choosing **Network**\. To learn more about specifying network settings for the Snowball, see [Changing Your IP Address](using-device.md#snowballnetwork)\.
 
    Make a note of the IP address shown, because you'll need it to configure the Snowball client\.
 **Important**  

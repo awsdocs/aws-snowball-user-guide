@@ -47,7 +47,7 @@ The following limitations exist for creating jobs in AWS Snowball:
 
 ## Limitations on Transferring On\-Premises Data with a Snowball<a name="transfer-limits"></a>
 
-The following limitations exist for transferring data to or from a Snowball appliance on\-premises:
+The following limitations exist for transferring data to or from a Snowball device on\-premises:
 + Files must be in a static state while being copied\. Files that are modified while they are being transferred will not be imported into Amazon S3\.
 + Jumbo frames are not supported—that is, Ethernet frames with more than 1500 bytes of payload\.
 + When selecting what data to export, keep in mind that objects with trailing slashes in their names \(`/` or `\`\) will not be transferred\. Before exporting any objects with trailing slashes, update their names to remove the slash\.
@@ -58,15 +58,15 @@ The following limitations exist for transferring data to or from a Snowball appl
 The following limitations exist for shipping a Snowball:
 + AWS will not ship a Snowball to a post office box\.
 + AWS will not ship a Snowball between non\-US regions—for example, from EU \(Ireland\) to EU \(Frankfurt\), or from Asia Pacific \(Mumbai\) to Asia Pacific \(Sydney\)\.
-+ Moving a AWS Snowball Edge appliance to an address outside of the country specified when the job was created is not allowed and is a violation of the AWS Service Terms\.
++ Moving a AWS Snowball Edge device to an address outside of the country specified when the job was created is not allowed and is a violation of the AWS Service Terms\.
 
 For more information on shipping, see [Shipping Considerations for AWS Snowball](shipping.md)\.
 
 ## Limitations on Processing Your Returned Snowball for Import<a name="return-limits"></a>
 
-To connect your returned Snowball to one of our Snowball stations for import, the appliance must meet the following requirements:
-+ The Snowball appliance must not be compromised\. Except for the two access panels in the front and the back, don't open the Snowball for any reason\.
-+ The appliance must not be physically damaged\. You can prevent damage by closing the two panels on the Snowball until the latches make an audible clicking sound\.
+To connect your returned Snowball to one of our Snowball stations for import, the device must meet the following requirements:
++ The Snowball device must not be compromised\. Except for the two access panels in the front and the back, don't open the Snowball for any reason\.
++ The device must not be physically damaged\. You can prevent damage by closing the two panels on the Snowball until the latches make an audible clicking sound\.
 + The Snowball's E Ink display must be visible, and must show the return label that was automatically generated when you finished transferring your data onto the Snowball\.
 
 **Note**  

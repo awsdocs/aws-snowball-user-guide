@@ -4,7 +4,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 --------
 
-# Jobs for Standard Snowball Appliances<a name="jobs"></a>
+# Jobs for Standard Snowball devices<a name="jobs"></a>
 
 A job in AWS Snowball \(Snowball\) is a discrete unit of work, defined when you create it in the console or the job management API\. Jobs have types, details, and statuses\. Each of those elements is covered in greater detail in the sections that follow\.
 

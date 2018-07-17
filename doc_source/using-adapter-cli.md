@@ -23,7 +23,7 @@ By default, the adapter runs on port 8080\. You can specify a different port by 
 
 ## Supported AWS CLI Amazon S3 Commands<a name="using-adapter-cli-commands"></a>
 
-Following, you can find a description of the subset of AWS CLI commands and options for Amazon S3 that the AWS Snowball Edge appliance supports\. If a command or option isn't listed following, it's not supported\. You can declare some unsupported options, like `--sse` or `--storage-class`, along with a command\. However, these are ignored and have no impact on how data is imported\.
+Following, you can find a description of the subset of AWS CLI commands and options for Amazon S3 that the AWS Snowball Edge device supports\. If a command or option isn't listed following, it's not supported\. You can declare some unsupported options, like `--sse` or `--storage-class`, along with a command\. However, these are ignored and have no impact on how data is imported\.
 + [cp](http://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) Copies a file or object to or from the Snowball\.
   + `--dryrun` \(boolean\) The operations that would be performed using the specified command are displayed without being run\.
   + `--quiet` \(boolean\) Operations performed by the specified command are not displayed\.

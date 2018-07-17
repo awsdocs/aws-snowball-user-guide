@@ -10,8 +10,8 @@ The AWS Snowball Management Console is where you'll create and manage jobs to ex
 
 **Topics**
 + [Create an Export Job](create-export-job.md)
-+ [Receive the AWS Snowball Appliance](receive-export.md)
-+ [Connect the AWS Snowball Appliance to Your Local Network](export-connect.md)
++ [Receive the AWS Snowball device](receive-export.md)
++ [Connect the AWS Snowball device to Your Local Network](export-connect.md)
 + [Transfer Data](transfer-export.md)
-+ [Return the Appliance](return-export.md)
++ [Return the device](return-export.md)
 + [Repeat the Process](repeat.md)

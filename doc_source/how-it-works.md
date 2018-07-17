@@ -4,7 +4,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 --------
 
-# How AWS Snowball Works with the Standard Snowball Appliance<a name="how-it-works"></a>
+# How AWS Snowball Works with the Standard Snowball device<a name="how-it-works"></a>
 
 Following, you can find information on how AWS Snowball works, including concepts and its end\-to\-end implementation\.
 
