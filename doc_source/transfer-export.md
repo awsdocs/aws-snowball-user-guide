@@ -42,7 +42,7 @@ Now that you have your credentials, you're ready to use the Snowball client to t
 
 ## Install the AWS Snowball Client<a name="download-export"></a>
 
-The Snowball client is one of the tools that you can use to manage the flow of data from your on\-premises data source to the Snowball\. You can download the Snowball client for your operating system from [AWS Snowball Tools Download](http://aws.amazon.com/snowball/tools) page\.
+The Snowball client is one of the tools that you can use to manage the flow of data from your on\-premises data source to the Snowball\. You can download the Snowball client for your operating system from [AWS Snowball Resources](http://aws.amazon.com/snowball/resources/) page\.
 
 ## Use the AWS Snowball Client<a name="exporttransfer"></a>
 

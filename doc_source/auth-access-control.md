@@ -21,7 +21,7 @@ To use AWS Snowball Management Console, the IAM user must meet the following con
 + The IAM account must be able to do the following: 
   + List all of your Amazon S3 buckets and create new ones as needed\.
   + Create Amazon Simple Notification Service \(Amazon SNS\) topics\.
-  + Select AWS Key Management Service \(AWS KMS\) keys\.
+  + Choose AWS Key Management Service \(AWS KMS\) keys\.
   + Create IAM role Amazon Resource Names \(ARNs\)\.
 
   For more information on granting a user access to an Amazon S3 bucket, see [Creating an IAM User for Snowball](#create-iam-user)\.
@@ -138,29 +138,31 @@ The preceding procedure creates a user that can create and manage jobs in the Sn
 
 ### Creating an IAM Role for Snowball<a name="create-iam-role"></a>
 
-An IAM role must be created with read and write permissions for your Amazon S3 buckets\. The role must also have a trust relationship with Snowball, so AWS can write the data in the Snowball and in your Amazon S3 buckets, depending on whether you're importing or exporting data\. Creating this role is done as a step in the job creation wizard for each job\.
+An IAM role must be created with read and write permissions for your Amazon S3 buckets\. The role must also have a trust relationship with Snowball, so AWS can write the data in the Snowball and in your Amazon S3 buckets, depending on whether you're importing or exporting data\.
 
-When creating a job in the AWS Snowball Management Console, creating the necessary IAM role occurs in step 4 in the **Permission** section\. This process is automatic, and the IAM role that you allow Snowball to assume is only used to write your data to your bucket when the Snowball with your transferred data arrives at AWS\. However, if you want to create an IAM role specifically for this purpose, the following procedure outlines that process\.
+When creating a job in the AWS Snowball Management Console, creating the necessary IAM role occurs in step 4 in the **Permission** section\. This process is automatic, and the IAM role that you allow Snowball to assume is only used to write your data to your bucket when the Snowball with your transferred data arrives at AWS\. The following procedure outlines that process\.
 
 **To create the IAM role for your import job**
 
-1. On the AWS Snowball Management Console, choose **Create job**\.
+1. Sign in to the AWS Management Console and open the AWS Snowball console at [https://console\.aws\.amazon\.com/importexport/](https://console.aws.amazon.com/importexport/)\. 
+
+1. Choose **Create job**\.
 
 1. In the first step, fill out the details for your import job into Amazon S3, and then choose **Next**\.
 
 1. In the second step, under **Permission**, choose **Create/Select IAM Role**\.
 
-1. The IAM Management Console opens, showing the IAM role that AWS uses to copy objects into your specified Amazon S3 buckets\.
+   The IAM Management Console opens, showing the IAM role that AWS uses to copy objects into your specified Amazon S3 buckets\.
 
-   Once you've reviewed the details on this page, choose **Allow**\.
+1. Review the details on this page, and then choose **Allow**\.
 
-1. You return to the AWS Snowball Management Console, where **Selected IAM role ARN** contains the Amazon Resource Name \(ARN\) for the IAM role that you just created\.
+   You return to the AWS Snowball Management Console, where **Selected IAM role ARN** contains the Amazon Resource Name \(ARN\) for the IAM role that you just created\.
 
 1. Choose **Next** to finish creating your IAM role\.
 
-The preceding procedure creates an IAM role that has write permissions for the Amazon S3 buckets that you plan to import your data into The IAM role that is created has one of the following structures, depending on whether it's for an import or export job\.
+The preceding procedure creates an IAM role that has write permissions for the Amazon S3 buckets that you plan to import your data into\. The IAM role that is created has one of the following structures, depending on whether it's for an import or export job\.
 
-**IAM Role ARN for an Import Job **
+**IAM Role for an Import Job**
 
 ```
           {
@@ -189,7 +191,19 @@ The preceding procedure creates an IAM role that has write permissions for the A
 }
 ```
 
-**IAM Role ARN for an Export Job**
+If you use server\-side encryption with AWS KMS–managed keys \(SSE\-KMS\) to encrypt the Amazon S3 buckets associated with your import job, you also need to add the following statement to your IAM role\.
+
+```
+{
+     "Effect": "Allow",
+     "Action": [
+       "kms:GenerateDataKey"
+     ],
+     "Resource": "arn:aws:s3:::SSEKMSEncryptedBucketName"
+}
+```
+
+**IAM Role for an Export Job**
 
 ```
 {
@@ -206,6 +220,18 @@ The preceding procedure creates an IAM role that has write permissions for the A
       "Resource": "arn:aws:s3:::*"
     }
   ]
+}
+```
+
+If you use server\-side encryption with AWS KMS–managed keys to encrypt the Amazon S3 buckets associated with your export job, you also need to add the following statement to your IAM role\.
+
+```
+{
+     "Effect": "Allow",
+     "Action": [
+            “kms:Decrypt”
+      ],
+      "Resource": "arn:aws:s3:::SSEKMSEncryptedBucketName"
 }
 ```
 

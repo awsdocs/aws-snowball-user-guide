@@ -1280,6 +1280,9 @@ Hash\-based Message Authentication Code\. A specific construction for calculatin
 **hosted zone**<a name="hostedzone"></a>  
 A collection of [resource record](#resourcerecord) sets that [Amazon Route 53](#Route53) hosts\. Like a traditional DNS zone file, a hosted zone represents a collection of records that are managed together under a single domain name\.
 
+**HTTP\-Query**<a name="HTTPquery"></a>   
+See [Query](#Query).
+
 **HVM virtualization**<a name="HVM"></a>  
 Hardware Virtual Machine virtualization\. Allows the guest VM to run as though it is on a native hardware platform, except that it still uses paravirtual \(PV\) network and storage drivers for improved performance\.   
 See also .
@@ -1911,9 +1914,6 @@ See also .
 
 **RESTful web service**<a name="RESTful"></a>  
 Also known as RESTful API\. A web service that follows [REST](#REST) architectural constraints\. The API operations must use HTTP methods explicitly; expose hierarchical URIs; and transfer either XML, [JSON](#json), or both\. 
-
-**HTTP\-Query**<a name="HTTPquery"></a>   
-See [Query](#Query).
 
 **return enabled**<a name="returnenabled"></a>  
 [Amazon CloudSearch](#cloudSearch): An index field option that enables the field's values to be returned in the search results\.

@@ -50,7 +50,7 @@ The following are overviews of how the Snowball is implemented for importing and
 1. **Receive the Snowball** – A few days later, your region's carrier delivers the Snowball to the address that you provided when you created the job, and the status of your job changes to **Delivered to you**\. When the Snowball arrives, you’ll notice that it didn’t arrive in a box, because the Snowball is its own shipping container\.
 
 1. **Get your credentials and download the Snowball client** – Get ready to start transferring data by getting your credentials, your job manifest, and the manifest's unlock code, and then downloading the Snowball client\.
-   + The Snowball client is the tool that you’ll use to manage the flow of data from your on\-premises data source to the Snowball\. You can download the Snowball client from the [AWS Snowball Tools Download](http://aws.amazon.com/snowball/tools) page\.
+   + The Snowball client is the tool that you’ll use to manage the flow of data from your on\-premises data source to the Snowball\. You can download the Snowball client from the [AWS Snowball Resources](http://aws.amazon.com/snowball/resources/) page\.
    + The manifest is used to authenticate your access to the Snowball, and it is encrypted so that only the unlock code can decrypt it\. You can get the manifest from the AWS Snowball Management Console when the Snowball is on\-premises at your location\.
    + The unlock code is a 29\-character code that also appears when you get your manifest\. We recommend that you write it down and keep it separate from the manifest to prevent unauthorized access to the Snowball while it’s at your facility\. The unlock code is visible when you get your manifest\.
 
@@ -93,7 +93,7 @@ The listing operation is a function of Amazon S3\. You are billed for it as you 
 1. **Receive the Snowball** – A few days later, the carrier delivers the Snowball to the address you provided when you created the job, and the status of your first job part changes to **Delivered to you**\. When the Snowball arrives, you’ll notice that it didn’t arrive in a box, because the Snowball is its own shipping container\.
 
 1. **Get your credentials and download the Snowball client** – Get ready to start transferring data by getting your credentials, your job manifest, and the manifest's unlock code, and then downloading the Snowball client\.
-   + The Snowball client is the tool that you’ll use to manage the flow of data from the Snowball to your on\-premises data destination\. You can download the Snowball client from the [AWS Snowball Tools Download](http://aws.amazon.com/snowball/tools) page\.
+   + The Snowball client is the tool that you’ll use to manage the flow of data from the Snowball to your on\-premises data destination\. You can download the Snowball client from the [AWS Snowball Resources](http://aws.amazon.com/snowball/resources/) page\.
    + The manifest is used to authenticate your access to the Snowball, and it is encrypted so that only the unlock code can decrypt it\. You can get the manifest from the AWS Snowball Management Console when the Snowball is on\-premises at your location\.
    + The unlock code is a 29\-character code that also appears when you get your manifest\. We recommend that you write it down and keep it separate from the manifest to prevent unauthorized access to the Snowball while it’s at your facility\. The unlock code is visible when you get your manifest\.
 

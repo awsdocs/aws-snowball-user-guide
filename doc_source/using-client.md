@@ -26,7 +26,7 @@ You can download the Snowball client from the tools page at any time, even befor
 
 **To test data transfer using the Snowball client**
 
-1. Download and install the Snowball client from the [AWS Snowball Tools Download](http://aws.amazon.com/snowball/tools) page\.
+1. Download and install the Snowball client from the [AWS Snowball Resources](http://aws.amazon.com/snowball/resources/) page\.
 
 1. Ensure that your workstation can communicate with your data source across the local network\. We recommend that you have as few hops as possible between the two\.
 
