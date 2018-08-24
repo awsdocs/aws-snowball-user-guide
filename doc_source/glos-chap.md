@@ -52,7 +52,7 @@ See [AWS Certificate Manager Private Certificate Authority \(ACM PCA\)](#acm-pca
 
 **action**<a name="action"></a>  
 An API function\. Also called *operation* or *call*\. The activity the [principal](#principal) has permission to perform\. The action is B in the statement "A has permission to do B to C where D applies\." For example, Jane sends a request to [Amazon SQS](#AmazonSimpleQueueService) with Action=ReceiveMessage\.   
-[Amazon CloudWatch](#AmazonCW): The response initiated by the change in an alarm's state: for example, from OK to ALARM\. The state change may be triggered by a metric reaching the alarm threshold, or by a SetAlarmState request\. Each alarm can have one or more actions assigned to each state\. Actions are performed once each time the alarm changes to a state that has an action assigned, such as an [Amazon Simple Notification Service](#SNS) notification, an [Auto Scaling](#AutoScaling) [policy](#policy) execution or an [Amazon EC2](#ec2) [instance](#instance) stop/terminate action\.
+[Amazon CloudWatch](#AmazonCW): The response initiated by the change in an alarm's state: for example, from OK to ALARM\. The state change may be triggered by a metric reaching the alarm threshold, or by a SetAlarmState request\. Each alarm can have one or more actions assigned to each state\. Actions are performed once each time the alarm changes to a state that has an action assigned, such as an [Amazon Simple Notification Service](#SNS) notification, an [Amazon EC2 Auto Scaling](#AutoScaling) [policy](#policy) execution or an [Amazon EC2](#ec2) [instance](#instance) stop/terminate action\.
 
 **active trusted signers**<a name="trustedsigner"></a>  
 A list showing each of the trusted signers you've specified and the IDs of the corresponding active key pairs that [Amazon CloudFront](#AmazonCF) is aware of\. To be able to create working signed URLs, a trusted signer must appear in this list with at least one key pair ID\.
@@ -61,10 +61,10 @@ A list showing each of the trusted signers you've specified and the IDs of the c
 Information that is checked for integrity but not encrypted, such as headers or other contextual metadata\.
 
 **administrative suspension**<a name="admin_suspension"></a>  
-[Auto Scaling](#AutoScaling) might suspend processes for [Auto Scaling group](#AutoScalingGroup) that repeatedly fail to launch instances\. Auto Scaling groups that most commonly experience administrative suspension have zero running instances, have been trying to launch instances for more than 24 hours, and have not succeeded in that time\. 
+[Amazon EC2 Auto Scaling](#AutoScaling) might suspend processes for [Auto Scaling group](#AutoScalingGroup) that repeatedly fail to launch instances\. Auto Scaling groups that most commonly experience administrative suspension have zero running instances, have been trying to launch instances for more than 24 hours, and have not succeeded in that time\. 
 
 **alarm**<a name="alarm"></a>  
-An item that watches a single metric over a specified time period, and triggers an [Amazon SNS](#SNS) [topic](#topic) or an [Auto Scaling](#AutoScaling) [policy](#policy) if the value of the metric crosses a threshold value over a predetermined number of time periods\.
+An item that watches a single metric over a specified time period, and triggers an [Amazon SNS](#SNS) [topic](#topic) or an [Amazon EC2 Auto Scaling](#AutoScaling) [policy](#policy) if the value of the metric crosses a threshold value over a predetermined number of time periods\.
 
 **allow**<a name="allow"></a>  
 One of two possible outcomes \(the other is [deny](#deny)\) when an [IAM](#IAM) access [policy](#policy) is evaluated\. When a user makes a request to AWS, AWS evaluates the request based on all permissions that apply to the user and then returns either allow or deny\.
@@ -144,6 +144,10 @@ See [https://aws\.amazon\.com/ec2/vm\-import](https://aws.amazon.com/ec2/vm-impo
 **Amazon Elastic Compute Cloud \(Amazon EC2\)**<a name="ec2"></a>  
 A web service that enables you to launch and manage Linux/UNIX and Windows server [instance](#instance)s in Amazon's data centers\.    
 See also [https://aws\.amazon\.com/ec2](https://aws.amazon.com/ec2/).
+
+**Amazon EC2 Auto Scaling**<a name="AutoScaling"></a>  
+A web service designed to launch or terminate [instance](#instance)s automatically based on user\-defined [policies](#policy), schedules, and [health check](#healthcheck)s\.   
+See also [https://aws\.amazon\.com/ec2/autoscaling](https://aws.amazon.com/ec2/autoscaling/).
 
 **Amazon Elastic File System \(Amazon EFS\)**<a name="efs"></a>  
 A file storage service for [EC2](#ec2) [instance](#instance)s\. Amazon EFS is easy to use and provides a simple interface with which you can create and configure file systems\. Amazon EFS storage capacity grows and shrinks automatically as you add and remove files\.   
@@ -225,7 +229,7 @@ See also [https://aws\.amazon\.com/amazon\-mq/](https://aws.amazon.com/amazon-mq
 
 **Amazon QuickSight**<a name="quicksight"></a>  
 A fast, cloud\-powered business analytics service that makes it easy to build visualizations, perform analysis, and quickly get business insights from your data\.    
-See also [https://aws\.amazon\.com/quicksight/](https://aws.amazon.com/redshift/).
+See also [https://aws\.amazon\.com/quicksight/](https://aws.amazon.com/quicksight/).
 
 **Amazon Redshift**<a name="redshift"></a>  
 A fully managed, petabyte\-scale data warehouse service in the cloud\. With Amazon Redshift, you can analyze your data using your existing business intelligence tools\.   
@@ -312,6 +316,10 @@ See [Amazon Machine Image \(AMI\)](#AmazonMachineImage).
 [AWS Elastic Beanstalk](#Beanstalk): A logical collection of components, including environments, versions, and environment configurations\. An application is conceptually similar to a folder\.  
 [AWS CodeDeploy \(CodeDeploy\)](#AWSCodeDeploy): A name that uniquely identifies the application to be deployed\. AWS CodeDeploy uses this name to ensure the correct combination of revision, deployment configuration, and deployment group are referenced during a deployment\.
 
+**Application Auto Scaling**<a name="ApplicationAutoScaling"></a>  
+A web service that enables you to configure automatic scaling for AWS resources beyond Amazon EC2, such as Amazon ECS services, Amazon EMR clusters, and DynamoDB tables\.   
+See also [https://aws\.amazon\.com/autoscaling/](https://aws.amazon.com/autoscaling/).
+
 **Application Billing**<a name="AppBilling"></a>  
 The location where your customers manage the Amazon DevPay products they've purchased\. The web address is [http://www\.amazon\.com/dp\-applications](http://www.amazon.com/dp-applications)\.
 
@@ -358,10 +366,6 @@ See [Amazon Aurora](#aurora).
 **authentication**<a name="authentication"></a>  
 The process of proving your identity to a system\.
 
-**Auto Scaling**<a name="AutoScaling"></a>  
-A web service designed to launch or terminate [instance](#instance)s automatically based on user\-defined [policies](#policy), schedules, and [health check](#healthcheck)s\.   
-See also [https://aws\.amazon\.com//autoscaling](https://aws.amazon.com//autoscaling/).
-
 **Auto Scaling group**<a name="AutoScalingGroup"></a>  
 A representation of multiple [EC2 instance](#ec2instance)s that share similar characteristics, and that are treated as a logical grouping for the purposes of instance scaling and management\.
 
@@ -378,6 +382,10 @@ See also [https://aws\.amazon\.com/about\-aws/whats\-new/2016/04/aws\-applicatio
 **AWS AppSync**<a name="AWSAppSync"></a>  
 An enterprise level, fully managed GraphQL service with real\-time data synchronization and offline programming features\.   
 See also [https://aws\.amazon\.com/appsync/](https://aws.amazon.com/appsync/).
+
+**AWS Auto Scaling**<a name="AWSAutoScaling"></a>  
+A fully managed service that enables you to quickly discover the scalable AWS resources that are part of your application and configure dynamic scaling\.   
+See also [https://aws\.amazon\.com/autoscaling/](https://aws.amazon.com/autoscaling/).
 
 **AWS Billing and Cost Management**<a name="billing"></a>  
 The AWS cloud computing model in which you pay for services on demand and use as much or as little at any given time as you need\. While [resource](#resource)s are active under your account, you pay for the cost of allocating those resources and for any incidental usage associated with those resources, such as data transfer or allocated storage\.   
@@ -581,7 +589,7 @@ A software development kit and open\-source PHP library for integrating your PHP
 See also [https://aws\.amazon\.com/sdk\-for\-php/](https://aws.amazon.com/sdk-for-php/).
 
 **AWS SDK for Python \(Boto\)**<a name="sdkpython"></a>  
-A software development kit for using Python to access AWS services like [Amazon EC2](#ec2), [Amazon EMR](#AmazonElasticMapReduce), [Auto Scaling](#AutoScaling), [Amazon Kinesis](#AmazonKinesis), [AWS Lambda](#lambda), and more\.   
+A software development kit for using Python to access AWS services like [Amazon EC2](#ec2), [Amazon EMR](#AmazonElasticMapReduce), [Amazon EC2 Auto Scaling](#AutoScaling), [Amazon Kinesis](#AmazonKinesis), [AWS Lambda](#lambda), and more\.   
 See also [http://boto\.readthedocs\.org/en/latest/](http://boto.readthedocs.org/en/latest/).
 
 **AWS SDK for Ruby**<a name="sdkruby"></a>  
@@ -695,7 +703,7 @@ See [BGP ASN](#BGPASN).
 A failed email delivery attempt\.
 
 **breach**<a name="breach"></a>  
-[Auto Scaling](#AutoScaling): The condition in which a user\-set threshold \(upper or lower boundary\) is passed\. If the duration of the breach is significant, as set by a breach duration parameter, it can possibly start a [scaling activity](#ScalingActivity)\. 
+[Amazon EC2 Auto Scaling](#AutoScaling): The condition in which a user\-set threshold \(upper or lower boundary\) is passed\. If the duration of the breach is significant, as set by a breach duration parameter, it can possibly start a [scaling activity](#ScalingActivity)\. 
 
 **bucket**<a name="bucket"></a>  
 [Amazon Simple Storage Service \(Amazon S3\)](#AmazonSimpleStorageService): A container for stored objects\. Every object is contained in a bucket\. For example, if the object named `photos/puppy.jpg` is stored in the `johnsmith` bucket, then authorized users can access the object with the URL `http://johnsmith.s3.amazonaws.com/photos/puppy.jpg`\.
@@ -859,7 +867,7 @@ A software development practice in which developers regularly merge code changes
 See also [https://aws\.amazon\.com/devops/continuous\-integration/](https://aws.amazon.com/devops/continuous-integration/).
 
 **cooldown period**<a name="cooldown"></a>  
-Amount of time during which [Auto Scaling](#AutoScaling) does not allow the desired size of the [Auto Scaling group](#AutoScalingGroup) to be changed by any other notification from an [Amazon CloudWatch](#AmazonCW) [alarm](#alarm)\.
+Amount of time during which [Amazon EC2 Auto Scaling](#AutoScaling) does not allow the desired size of the [Auto Scaling group](#AutoScalingGroup) to be changed by any other notification from an [Amazon CloudWatch](#AmazonCW) [alarm](#alarm)\.
 
 **core node**<a name="corenode"></a>  
 An [EC2 instance](#ec2instance) that runs [Hadoop](#Hadoop) map and reduce tasks and stores data using the Hadoop Distributed File System \(HDFS\)\. Core nodes are managed by the [master node](#masternode), which assigns Hadoop tasks to nodes and monitors their status\. The EC2 instances you assign as core nodes are capacity that must be allotted for the entire job flow run\. Because core nodes store data, you can't remove them from a job flow\. However, you can add more core nodes to a running job flow\.   
@@ -1260,7 +1268,7 @@ A persistent email delivery failure such as "mailbox does not exist\."
 A hardware\-based IPsec VPN connection over the internet\.
 
 **health check**<a name="healthcheck"></a>  
-A system call to check on the health status of each instance in an [Auto Scaling](#AutoScaling) group\.
+A system call to check on the health status of each instance in an [Amazon EC2 Auto Scaling](#AutoScaling) group\.
 
 **high\-quality email**<a name="highqualityemail"></a>  
 Email that recipients find valuable and want to receive\. Value means different things to different recipients and can come in the form of offers, order confirmations, receipts, newsletters, etc\.
@@ -1438,7 +1446,7 @@ See [AWS Key Management Service \(AWS KMS\)](#AWS_KMS).
 In machine learning, data for which you already know the target or “correct” answer\.
 
 **launch configuration**<a name="launchconfiguration"></a>  
-A set of descriptive parameters used to create new [EC2 instance](#ec2instance)s in an [Auto Scaling](#AutoScaling) activity\.   
+A set of descriptive parameters used to create new [EC2 instance](#ec2instance)s in an [Amazon EC2 Auto Scaling](#AutoScaling) activity\.   
 A template that an [Auto Scaling group](#AutoScalingGroup) uses to launch new EC2 instances\. The launch configuration contains information such as the [Amazon Machine Image \(AMI\)](#AmazonMachineImage) ID, the instance type, key pairs, [security group](#SecurityGroup)s, and block device mappings, among other configuration settings\.
 
 **launch permission**<a name="launchpermission"></a>  
@@ -1718,7 +1726,7 @@ Information that has not been [encrypted](#encrypt), as opposed to [ciphertext](
 
 **policy**<a name="policy"></a>  
 [IAM](#IAM): A document defining permissions that apply to a user, group, or role; the permissions in turn determine what users can do in AWS\. A policy typically [allow](#allow)s access to specific actions, and can optionally grant that the actions are allowed for specific [resource](#resource)s, like [EC2 instance](#ec2instance)s, [Amazon S3](#AmazonSimpleStorageService) [bucket](#bucket)s, and so on\. Policies can also explicitly [deny](#deny) access\.  
-[Auto Scaling](#AutoScaling): An object that stores the information needed to launch or terminate instances for an Auto Scaling group\. Executing the policy causes instances to be launched or terminated\. You can configure an [alarm](#alarm) to invoke an Auto Scaling policy\.
+[Amazon EC2 Auto Scaling](#AutoScaling): An object that stores the information needed to launch or terminate instances for an Auto Scaling group\. Executing the policy causes instances to be launched or terminated\. You can configure an [alarm](#alarm) to invoke an Auto Scaling policy\.
 
 **policy generator**<a name="policy_generator"></a>  
 A tool in the [IAM](#IAM) [AWS Management Console](#AWSManagementConsole) that helps you build a [policy](#policy) by selecting elements from lists of available options\. 

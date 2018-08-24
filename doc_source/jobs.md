@@ -79,6 +79,7 @@ Each job has a *status*, which changes to denote the current state of the job\.
 | In transit to you | The Snowball has been shipped to the address you provided during job creation\. | Both | 
 | Delivered to you | The Snowball has arrived at the address you provided during job creation\. | Both | 
 | In transit to AWS | You have shipped the Snowball back to AWS\. | Both | 
+| At sorting facility | The device for this job is at our internal sorting facility\. Any additional processing for import jobs into Amazon S3 will begin soon, typically within 2 days\. | Both | 
 | At AWS | Your shipment has arrived at AWS\. If you're importing data, your import typically begins within a day of its arrival\. | Both | 
 | Importing | AWS is importing your data into Amazon Simple Storage Service \(Amazon S3\)\. | Import | 
 | Completed | Your import job or export job part has completed successfully\. | Both | 
