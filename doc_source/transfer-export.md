@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -42,7 +42,9 @@ Now that you have your credentials, you're ready to use the Snowball client to t
 
 ## Install the AWS Snowball Client<a name="download-export"></a>
 
-The Snowball client is one of the tools that you can use to manage the flow of data from your on\-premises data source to the Snowball\. You can download the Snowball client for your operating system from [AWS Snowball Resources](http://aws.amazon.com/snowball/resources/) page\.
+The Snowball client is one of the tools that you can use to manage the flow of data from your on\-premises data source to the Snowball\.
+
+The Snowball client must be downloaded from the [AWS Snowball Resources](http://aws.amazon.com/snowball/resources/) page and installed on a powerful workstation that you own\.
 
 ## Use the AWS Snowball Client<a name="exporttransfer"></a>
 

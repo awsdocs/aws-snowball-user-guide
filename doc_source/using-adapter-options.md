@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -9,7 +9,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 Following, you can find information on Amazon S3 Adapter for Snowball options that help you configure how the adapter communicates with a Snowball\.
 
 **Note**  
-Before transferring data into Amazon S3 using Snowball, make sure that the files and directories that you're going to transfer are named according to the [Object Key Naming Guidelines](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-key-guidelines)\.
+Before transferring data into Amazon S3 using Snowball, make sure that the files and directories that you're going to transfer are named according to the [Object Key Naming Guidelines](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-key-guidelines)\.
 
 
 | Option | Description | Usage and Example | 

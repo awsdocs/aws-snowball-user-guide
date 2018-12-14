@@ -1,3 +1,5 @@
+# <a name="glos-chap"></a>
+
 # AWS Glossary<a name="glos-chap"></a>
 
  [Numbers and Symbols](#numbers) \| [A](#A) \| [B](#B) \| [C](#C) \| [D](#D) \| [E](#E) \| [F](#F) \| [G](#G) \| [H](#H) \| [I](#I) \| [J](#J) \| [K](#K) \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| [Q](#Q) \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| [W](#W) \| [X, Y, Z](#XYZ) 
@@ -173,8 +175,8 @@ See also [https://aws\.amazon\.com/elasticsearch\-service](https://aws.amazon.co
 A managed service for deploying, operating, and scaling session\-based multiplayer games\.   
 See also [https://aws\.amazon\.com/gamelift/](https://aws.amazon.com/gamelift/).
 
-**Amazon Glacier**<a name="glacier"></a>  
-A secure, durable, and low\-cost storage service for data archiving and long\-term backup\. You can reliably store large or small amounts of data for significantly less than on\-premises solutions\. Amazon Glacier is optimized for infrequently accessed data, where a retrieval time of several hours is suitable\.   
+**Glacier**<a name="glacier"></a>  
+A secure, durable, and low\-cost storage service for data archiving and long\-term backup\. You can reliably store large or small amounts of data for significantly less than on\-premises solutions\. Glacier is optimized for infrequently accessed data, where a retrieval time of several hours is suitable\.   
 See also [https://aws\.amazon\.com/glacier/](https://aws.amazon.com/glacier/).
 
 **Amazon GuardDuty**<a name="guardduty"></a>  
@@ -490,7 +492,7 @@ See also [https://aws\.amazon\.com/glue](https://aws.amazon.com/glue/).
 An isolated AWS Region designed to host sensitive workloads in the cloud, ensuring that this work meets the US government's regulatory and compliance requirements\. The AWS GovCloud \(US\) Region adheres to United States International Traffic in Arms Regulations \(ITAR\), Federal Risk and Authorization Management Program \(FedRAMP\) requirements, Department of Defense \(DOD\) Cloud Security Requirements Guide \(SRG\) Levels 2 and 4, and Criminal Justice Information Services \(CJIS\) Security Policy requirements\.   
 See also [https://aws\.amazon\.com/govcloud\-us/](https://aws.amazon.com/govcloud-us/).
 
-**AWS Greengrass**<a name="Greengrass"></a>  
+**AWS IoT Greengrass**<a name="Greengrass"></a>  
 Software that lets you run local compute, messaging, data caching, sync, and ML inference capabilities for connected devices in a secure way\.   
 See also [https://aws\.amazon\.com/greengrass](https://aws.amazon.com/greengrass/).
 
@@ -574,18 +576,18 @@ See also [https://aws\.amazon\.com/sdk\-for\-java/](https://aws.amazon.com/sdk-f
 
 **AWS SDK for JavaScript in the Browser**<a name="sdkjavabrowser"></a>  
 A software development kit for accessing AWS services from JavaScript code running in the browser\. Authenticate users through Facebook, Google, or Login with Amazon using web identity federation\. Store application data in [Amazon DynamoDB](#dynamodb), and save user files to [Amazon S3](#AmazonSimpleStorageService)\.   
-See also [http://docs\.aws\.amazon\.com/sdk\-for\-javascript/v2/developer\-guide/](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/).
+See also [https://docs\.aws\.amazon\.com/sdk\-for\-javascript/v2/developer\-guide/](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/).
 
 **AWS SDK for JavaScript in Node\.js**<a name="sdkjavanodejs"></a>  
 A software development kit for accessing AWS services from JavaScript in Node\.js\. The SDK provides JavaScript objects for AWS services, including [Amazon S3](#AmazonSimpleStorageService), [Amazon EC2](#ec2), [Amazon DynamoDB](#dynamodb), and [Amazon Simple Workflow Service \(Amazon SWF\)](#swf) \. The single, downloadable package includes the AWS JavaScript library and documentation\.   
-See also [http://docs\.aws\.amazon\.com/sdk\-for\-javascript/v2/developer\-guide/](http://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/).
+See also [https://docs\.aws\.amazon\.com/sdk\-for\-javascript/v2/developer\-guide/](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/).
 
 **AWS SDK for \.NET**<a name="sdkdotnet"></a>  
 A software development kit that provides \.NET API actions for AWS services including [Amazon S3](#AmazonSimpleStorageService), [Amazon EC2](#ec2), [IAM](#IAM), and more\. You can download the SDK as multiple service\-specific packages on NuGet\.   
 See also [https://aws\.amazon\.com/sdk\-for\-net/](https://aws.amazon.com/sdk-for-net/).
 
 **AWS SDK for PHP**<a name="sdkphp"></a>  
-A software development kit and open\-source PHP library for integrating your PHP application with AWS services like [Amazon S3](#AmazonSimpleStorageService), [Amazon Glacier](#glacier), and [Amazon DynamoDB](#dynamodb)\.   
+A software development kit and open\-source PHP library for integrating your PHP application with AWS services like [Amazon S3](#AmazonSimpleStorageService), [Glacier](#glacier), and [Amazon DynamoDB](#dynamodb)\.   
 See also [https://aws\.amazon\.com/sdk\-for\-php/](https://aws.amazon.com/sdk-for-php/).
 
 **AWS SDK for Python \(Boto\)**<a name="sdkpython"></a>  
@@ -1083,7 +1085,7 @@ A web service that improves an application's availability by distributing incomi
 See also [https://aws\.amazon\.com/elasticloadbalancing](https://aws.amazon.com/elasticloadbalancing/).
 
 **elastic network interface**<a name="elasticnetworkinterface"></a>  
-An additional network interface that can be attached to an [instance](#instance)\. Elastic network interfaces include a primary private IP address, one or more secondary private IP addresses, an elastic IP address \(optional\), a MAC address, membership in specified [security group](#SecurityGroup)s, a description, and a source/destination check flag\. You can create an elastic network interface, attach it to an instance, detach it from an instance, and attach it to another instance\. 
+An additional network interface that can be attached to an [instance](#instance)\. Elastic network interfaces include a primary private IP address, one or more secondary private IP addresses, an Elastic IP Address \(optional\), a MAC address, membership in specified [security group](#SecurityGroup)s, a description, and a source/destination check flag\. You can create an elastic network interface, attach it to an instance, detach it from an instance, and attach it to another instance\. 
 
 **Elasticsearch**<a name="Elasticsearch"></a>  
 An open source, real\-time distributed search and analytics engine used for full\-text search, structured search, and analytics\. Elasticsearch was developed by the Elastic company\.  

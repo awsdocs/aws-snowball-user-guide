@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -57,7 +57,7 @@ Once your job is created, you're taken to the job dashboard, where you can view 
 **Note**  
 The **Job created** status is the only status during which you can cancel a job\.
 
-For more information on managing jobs from the AWS Snowball Management Console and tracking job status, see [Using the AWS Snowball Management Console](using-console.md)\. Jobs can also be created and managed with the job management API\. For more information, see the [AWS Snowball API Reference](http://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\.
+For more information on managing jobs from the AWS Snowball Management Console and tracking job status, see [Using the AWS Snowball Management Console](using-console.md)\. Jobs can also be created and managed with the job management API\. For more information, see the [AWS Snowball API Reference](https://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\.
 
 After you created your first import job, AWS processes the information you provided and prepares a Snowball specifically for your import job into Amazon S3\. During the processing stage, if there's an issue with your job, we contact you by email\. Otherwise, we ship a Snowball to the address you provided when you created the job\. Shipping can take a few days, but you can track the shipping status of the Snowball we prepared for your job\. In your job's details, you'll see a link to the tracking webpage with your tracking number provided\.
 

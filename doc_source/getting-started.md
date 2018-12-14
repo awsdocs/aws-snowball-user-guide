@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -8,7 +8,7 @@ This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are 
 
 With AWS Snowball \(Snowball\), you can transfer hundreds of terabytes or petabytes of data between your on\-premises data centers and Amazon Simple Storage Service \(Amazon S3\)\. Following, you can find general instructions for creating and completing your first data transfer job\. You can find more information on specific components of Snowball later in this documentation\. For an overview of the service as a whole, see [How AWS Snowball Works with the Standard Snowball device](how-it-works.md)\.
 
-Both sets of instructions assume that you'll use the AWS Snowball Management Console to create your job and the Snowball client to locally transfer your data\. If you'd rather work programmatically, to create jobs you can use the job management API for Snowball\. For more information, see [AWS Snowball API Reference](http://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\. To transfer your data programmatically, you can use the Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with the Amazon S3 Adapter for Snowball](snowball-transfer-adapter.md)\.
+Both sets of instructions assume that you'll use the AWS Snowball Management Console to create your job and the Snowball client to locally transfer your data\. If you'd rather work programmatically, to create jobs you can use the job management API for Snowball\. For more information, see [AWS Snowball API Reference](https://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\. To transfer your data programmatically, you can use the Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with the Amazon S3 Adapter for Snowball](snowball-transfer-adapter.md)\.
 
 ## Sign Up for AWS<a name="snowball-signing-up"></a>
 

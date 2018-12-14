@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -12,7 +12,7 @@ In Snowball, you can choose an existing KMS key\. Specifying the ARN for an AWS 
 
 Your data is encrypted in the local memory of your workstation before it is transferred to the Snowball\. The Snowball never contains any discoverable keys\.
 
-In Amazon S3, there is a server\-side\-encryption option that uses AWS KMS–managed keys \(SSE\-KMS\)\. SSE\-KMS is not supported with AWS Snowball\. For more information on supported SSE in AWS Snowball, see [Server\-Side Encryption in AWS Snowball](security.md#sse)\.
+In Amazon S3, there is a server\-side\-encryption option that uses AWS KMS–managed keys \(SSE\-KMS\)\. For more information on supported SSE in AWS Snowball, see [Server\-Side Encryption in AWS Snowball](security.md#sse)\.
 
 ## Using the AWS\-Managed Customer Master Key for Snowball<a name="defaultenvelopekey"></a>
 
@@ -38,4 +38,4 @@ The AWS KMS key ARN is a globally unique identifier for the AWS KMS CMK\.
 
 You have the option of using your own custom AWS KMS envelope encryption key with AWS Snowball\. If you choose to create your own key, that key must be created in the same region that your job was created in\.
 
-To create your own AWS KMS key for a job, see [Creating Keys](http://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*\.
+To create your own AWS KMS key for a job, see [Creating Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*\.

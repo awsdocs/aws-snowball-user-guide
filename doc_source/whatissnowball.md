@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -25,7 +25,7 @@ Snowball with the Snowball appliance has the following features:
 + You can manage your jobs through the AWS Snowball Management Console, or programmatically with the job management API\.
 + You can perform local data transfers between your on\-premises data center and a Snowball\. These transfers can be done through the Snowball client, a standalone downloadable client, or programmatically using Amazon S3 REST API calls with the downloadable Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with a Snowball](using-device.md#snowball-data-transfer)\.
 + The Snowball is its own shipping container, and its E Ink display changes to show your shipping label when the Snowball is ready to ship\. For more information, see [Shipping Considerations for AWS Snowball](shipping.md)\.
-+ For a list of regions where the Snowball appliance is available, see [AWS Snowball](http://docs.aws.amazon.com/general/latest/gr/rande.html#snowball_region) in the * AWS General Reference*\.
++ For a list of regions where the Snowball appliance is available, see [AWS Snowball](https://docs.aws.amazon.com/general/latest/gr/rande.html#snowball_region) in the * AWS General Reference*\.
 
 **Note**  
 Snowball doesn't support international shipping or shipping between regions outside of the US\. For more information on shipping restrictions, see [Region\-Based Shipping Restrictions](shipping.md#shipwithinregion)\.
@@ -35,7 +35,7 @@ Snowball doesn't support international shipping or shipping between regions outs
 Before transferring data into Amazon S3 using Snowball, you should do the following:
 + Create an AWS account and an administrator user in AWS Identity and Access Management \(IAM\)\. For more information, see [Creating an IAM User for Snowball](auth-access-control.md#create-iam-user)\.
 + If you are importing data, do the following:
-  + Confirm that the files and folders to transfer are named according to the [Object Key Naming Guidelines](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-key-guidelines) for Amazon S3\. Any files or folders with names that don't meet these guidelines won't be imported into Amazon S3\.
+  + Confirm that the files and folders to transfer are named according to the [Object Key Naming Guidelines](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-key-guidelines) for Amazon S3\. Any files or folders with names that don't meet these guidelines won't be imported into Amazon S3\.
   + Plan what data you want to import into Amazon S3\. For more information, see [How to Transfer Petabytes of Data Efficiently](transfer-petabytes.md)\.
 + If you are exporting data, do the following:
   + Understand what data will be exported when you create your job\. For more information, see [Using Export Ranges](ranges.md)\.
@@ -45,10 +45,10 @@ Before transferring data into Amazon S3 using Snowball, you should do the follow
 
 Snowball uses the AWS Snowball Management Console and the job management API for creating and managing jobs\. To perform data transfers on the Snowball appliance locally, use the Snowball client or the Amazon S3 Adapter for Snowball\. To learn more about using these in detail, see the following topics:
 + [Using the AWS Snowball Management Console](using-console.md)
-+ [Using an AWS Snowball device](using-device.md)
++ [Using an AWS Snowball Device](using-device.md)
 + [Transferring Data with a Snowball](using-device.md#snowball-data-transfer)
 
-We also recommend that you check out the job management API for AWS Snowball\. For more information, see [AWS Snowball API Reference](http://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\.
+We also recommend that you check out the job management API for AWS Snowball\. For more information, see [AWS Snowball API Reference](https://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\.
 
 ## Services Related to AWS Snowball<a name="snowball-related"></a>
 

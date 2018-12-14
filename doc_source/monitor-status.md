@@ -1,12 +1,12 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
 # Monitor the Import Status<a name="monitor-status"></a>
 
-You can track the status of your job at any time through the AWS Snowball Management Console or by making calls to the job management API\. For more information this API, see [AWS Snowball API Reference](http://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\. Whenever the Snowball is in transit, you can get detailed shipping status information from the tracking website using the tracking number you obtained when your region's carrier received the Snowball\. 
+You can track the status of your job at any time through the AWS Snowball Management Console or by making calls to the job management API\. For more information this API, see [AWS Snowball API Reference](https://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\. Whenever the Snowball is in transit, you can get detailed shipping status information from the tracking website using the tracking number you obtained when your region's carrier received the Snowball\. 
 
 To monitor the status of your import job in the console, sign in to the [AWS Snowball Management Console](https://console.aws.amazon.com/importexport/home?region=us-west-2)\. Choose the job you want to track from the table, or search for it by your chosen parameters in the search bar above the table\. Once you select the job, detailed information appears for that job within the table, including a bar that shows real\-time status of your job\.
 

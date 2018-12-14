@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -12,7 +12,7 @@ The following table describes the important changes to the documentation since t
 
 | Change | Description | Date | 
 | --- |--- |--- |
-| Improved Troubleshooting Content | The troubleshooting chapter has been updated and reorganized\. | July 11, 2018 | 
+| [Improved Troubleshooting Content](#WhatsNew) | The troubleshooting chapter has been updated and reorganized\. | July 11, 2018 | 
 
 The following table describes the important changes to the documentation since the last release of AWS Snowball before July 2018\.
 
@@ -29,7 +29,7 @@ The following table describes the important changes to the documentation since t
 | Documentation update | The right navigation has been updated for clarity and consistency, and a regional limitations section has been added\. For more information, see [Regional Limitations for AWS Snowball](limits.md#region-limits)\. | May 8, 2017 | 
 | Reading Hadoop Distributed File System \(HDFS\) custom configuration files is now supported\. | You can now specify the location of your HDFS custom configuration XML files using the new \-\-hdfsconfig option for the Snowball client cp command\. | February 8, 2017 | 
 | Importing data from a Hadoop Distributed File System \(HDFS\) cluster \(version 2\.x\) is now supported\. | You can now import data from a HDFS cluster \(version 2\.x\) to Amazon S3 through a Snowball\. | September 30, 2016 | 
-| Programmatic job management and data transfers are now supported\. | You can now programmatically manage jobs and transfer data with Snowball\. For more information on using the job management API for Snowball, see [AWS Snowball API Reference](http://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\. For more information on using the Amazon S3 Adapter for Snowball to call Amazon S3 REST API actions to transfer data with a Snowball, see [Transferring Data with the Amazon S3 Adapter for Snowball](snowball-transfer-adapter.md)\. | August 11, 2016 | 
+| Programmatic job management and data transfers are now supported\. | You can now programmatically manage jobs and transfer data with Snowball\. For more information on using the job management API for Snowball, see [AWS Snowball API Reference](https://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)\. For more information on using the Amazon S3 Adapter for Snowball to call Amazon S3 REST API actions to transfer data with a Snowball, see [Transferring Data with the Amazon S3 Adapter for Snowball](snowball-transfer-adapter.md)\. | August 11, 2016 | 
 | Snowball is now available from EU \(Frankfurt\) in the European Union\. | You can now create and manage jobs from the [EU \(Frankfurt\) AWS Management Console](https://eu-central-1.console.aws.amazon.com/importexport/home)\. For more information, see [Shipping Considerations for AWS Snowball](shipping.md)\.  | July 25, 2016 | 
 | Snowball is now available in India\. | Snowball is now available in the Asia Pacific \(Mumbai\) region\. For more information, see [Shipping Considerations for AWS Snowball](shipping.md)\.  | June 27, 2016 | 
 | Snowball is now available in new AWS Regions and has a new storage capacity option\. | Snowball is now available in the following regions; US East \(N\. Virginia\), US West \(Oregon\), US West \(N\. California\), EU \(Ireland\), Asia Pacific \(Sydney\), and AWS GovCloud \(US\)\. For more information, see [Shipping Considerations for AWS Snowball](shipping.md)\. Snowball also has a new 80 TB model available in all regions, in addition to the 50 TB model only available in the US regions\.  | April 19, 2016 | 

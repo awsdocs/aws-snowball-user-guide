@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -27,11 +27,11 @@ AWS Snowball uses server side\-encryption \(SSE\) to protect data at rest\.
 
 ### Server\-Side Encryption in AWS Snowball<a name="sse"></a>
 
-AWS Snowball supports server\-side encryption with Amazon S3–managed encryption keys \(SSE\-S3\)\. Server\-side encryption is about protecting data at rest, and SSE\-S3 has strong, multifactor encryption to protect your data at rest in Amazon S3\. For more information on SSE\-S3, see [Protecting Data Using Server\-Side Encryption with Amazon S3\-Managed Encryption Keys \(SSE\-S3\)](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html) in the * Amazon Simple Storage Service Developer Guide*\.
+AWS Snowball supports server\-side encryption with Amazon S3–managed encryption keys \(SSE\-S3\) and server\-side encryption with AWS Key Management Service–managed keys \(SSE\-KMS\)\. Server\-side encryption is about protecting data at rest\. For more information, see [Protecting Data Using Server\-Side Encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html) in the *Amazon Simple Storage Service Developer Guide*\.
 
-Currently, Snowball doesn't support server\-side encryption with AWS KMS–managed keys \(SSE\-KMS\) or server\-side encryption with customer\-provided keys \(SSE\-C\)\. However, you might want to use either of these SSE types to protect data that has been imported\. Or you might already use one of those two SSE types and want to export\. In these cases, keep the following in mind:
-+ **Import** – If you want to use SSE\-KMS or SSE\-C to encrypt the objects that you've imported into S3, copy those objects into another bucket that has SSE\-KMS encryption established as a part of that bucket's bucket policy\.
-+ **Export** – If you want to export objects that are encrypted with SSE\-KMS or SSE\-C, first copy those objects to another bucket that either has no server\-side encryption, or has SSE\-S3 specified in that bucket's bucket policy\. 
+Currently, Snowball doesn't support server\-side encryption with customer\-provided keys \(SSE\-C\)\. However, you might want to use this SSE option to protect data that has been imported\. Or you might already use this encryption option for data you want to export\. In these cases, keep the following in mind:
++ **Import** – If you want to use SSE\-C to encrypt the objects that you've imported into S3, copy those objects into another bucket that has SSE\-KMS or SSE\-S3 encryption established as a part of that bucket's bucket policy\.
++ **Export** – If you want to export objects that are encrypted with SSE\-C, first copy those objects to another bucket that either has no server\-side encryption, or has SSE\-KMS or SSE\-S3 specified in that bucket's bucket policy\.
 
 #### Enabling SSE\-S3 for Data Imported into Amazon S3 from a Snowball<a name="howto-sse"></a>
 

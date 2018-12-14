@@ -1,10 +1,10 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
-# Using an AWS Snowball device<a name="using-device"></a>
+# Using an AWS Snowball Device<a name="using-device"></a>
 
 Following, you can find an overview of the Snowball appliance, the physically rugged device protected by AWS Key Management Service \(AWS KMS\) that you use to transfer data between your on\-premises data centers and Amazon Simple Storage Service \(Amazon S3\)\. This overview includes images of the Snowball, instructions for preparing the device for data transfer, and networking best practices to help optimize your data transfer\.
 

@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -27,7 +27,7 @@ The `--batch` option for the Snowball client's copy command is not supported for
 When you transfer data between your on\-premises data centers and a Snowball, the Snowball client automatically generates a plaintext log and saves it to your workstation\. If you encounter unexpected errors during data transfer to the Snowball, make a copy of the associated log files\. Include them along with a brief description of the issues that you encountered in a message to AWS Support\.
 
 Logs are saved in the following locations, based on your workstation's operating system:
-+ **Windows** – C:/Users/*<username>*/\.aws/snowball/logs/
++ **Windows** – C:\\Users\\*<username>*\\\.aws\\snowball\\logs\\
 + **Mac** – /Users/*<username>*/\.aws/snowball/logs/
 + **Linux** – /home/*<username>*/\.aws/snowball/logs/
 

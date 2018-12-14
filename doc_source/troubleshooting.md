@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -58,7 +58,7 @@ Use the following topics to help you resolve problems when working with a Snowba
 When working with the AWS CLI, you might encounter an error message that says `"Profile cannot be null"`\. You can encounter this error if the AWS CLI hasn't been installed or an AWS CLI profile hasn't been configured\.
 
 **Action to take**  
-Ensure that you have downloaded and configured the AWS CLI on your workstation\. For more information, see [Install the AWS CLI Using the Bundled Installer \(Linux, macOS, or Unix\)](http://docs.aws.amazon.com/cli/latest/userguide/awscli-install-bundle.html) in the *AWS Command Line Interface User Guide\.*
+Ensure that you have downloaded and configured the AWS CLI on your workstation\. For more information, see [Install the AWS CLI Using the Bundled Installer \(Linux, macOS, or Unix\)](https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-bundle.html) in the *AWS Command Line Interface User Guide\.*
 
 ### Null Pointer Error When Transferring Data with the AWS CLI<a name="null-pointer-troubleshooting"></a>
 
@@ -134,21 +134,21 @@ In some cases, you might be unable to connect the adapter to your Snowball\. In 
 If you're communicating with the Snowball through the Amazon S3 Adapter for Snowball using the AWS CLI, you might encounter an error message that says `Unable to locate credentials. You can configure credentials by running "aws configure".`
 
 **Action to take**  
-Configure the AWS credentials that the AWS CLI uses to run commands for you\. For more information, see [Configuring the AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) in the *AWS Command Line Interface User Guide*\.
+Configure the AWS credentials that the AWS CLI uses to run commands for you\. For more information, see [Configuring the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) in the *AWS Command Line Interface User Guide*\.
 
 ## Troubleshooting Import Job Problems<a name="import-troubleshooting"></a>
 
 Sometimes files fail to import into Amazon S3\. If the following issue occurs, try the actions specified to resolve your issue\. If a file fails import, you might need to try importing it again\. Importing it again might require a new job for Snowball\.
 
 **Files failed import into Amazon S3 due to invalid characters in object names**  
-This problem occurs if a file or folder name has characters that aren't supported by Amazon S3\. Amazon S3 has rules about what characters can be in object names\. For more information, see [Object Key Naming Guidelines](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-key-guidelines)\.
+This problem occurs if a file or folder name has characters that aren't supported by Amazon S3\. Amazon S3 has rules about what characters can be in object names\. For more information, see [Object Key Naming Guidelines](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-key-guidelines)\.
 
 **Action to take**  
 If you encounter this issue, you see the list of files and folders that failed import in your job completion report\.
 
 In some cases, the list is prohibitively large, or the files in the list are too large to transfer over the internet\. In these cases, you should create a new Snowball import job, change the file and folder names to comply with Amazon S3 rules, and transfer the files again\.
 
-If the files are small and there isn't a large number of them, you can copy them to Amazon S3 through the AWS CLI or the AWS Management Console\. For more information, see [How Do I Upload Files and Folders to an S3 Bucket?](http://docs.aws.amazon.com/AmazonS3/latest/user-guide/upload-objects.html) in the *Amazon Simple Storage Service Console User Guide\.*
+If the files are small and there isn't a large number of them, you can copy them to Amazon S3 through the AWS CLI or the AWS Management Console\. For more information, see [How Do I Upload Files and Folders to an S3 Bucket?](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/upload-objects.html) in the *Amazon Simple Storage Service Console User Guide\.*
 
 ## Troubleshooting Export Job Problems<a name="export-troubleshooting"></a>
 
@@ -165,4 +165,4 @@ A file can fail export to a Microsoft Windows Server if it or a related folder i
 
 1. If the list of names is prohibitively large, or if the files in the list are too large to transfer over the internet, create a new export job specifically for those objects\.
 
-   If the files are small and there isn't a large number of them, copy the renamed objects from Amazon S3 through the AWS CLI or the AWS Management Console\. For more information, see [How Do I Download an Object from an S3 Bucket?](http://docs.aws.amazon.com/AmazonS3/latest/user-guide/download-objects.html) in the* Amazon Simple Storage Service Console User Guide\.*
+   If the files are small and there isn't a large number of them, copy the renamed objects from Amazon S3 through the AWS CLI or the AWS Management Console\. For more information, see [How Do I Download an Object from an S3 Bucket?](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/download-objects.html) in the* Amazon Simple Storage Service Console User Guide\.*

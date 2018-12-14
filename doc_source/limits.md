@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -16,7 +16,7 @@ When you transfer data into Amazon Simple Storage Service using a Snowball, keep
 The AWS Snowball service has two device types, the standard Snowball and the Snowball Edge\. The following table highlights which of these devices are available in which regions\. 
 
 **Note**  
-The guide you're reading now is for the Snowball, which has 50 TB or 80 TB of storage space\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+The guide you're reading now is for the Snowball, which has 50 TB or 80 TB of storage space\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 
 ****  
@@ -40,7 +40,7 @@ The guide you're reading now is for the Snowball, which has 50 TB or 80 TB of st
 
 The following limitations exist for creating jobs in AWS Snowball:
 + For security purposes, data transfers must be completed within 90 days of the Snowball being prepared\.
-+ Currently, Snowball doesn't support server\-side encryption with AWS KMS–managed keys \(SSE\-KMS\) or server\-side encryption with customer\-provided keys \(SSE\-C\)\. Snowball does support server\-side encryption with Amazon S3–managed encryption keys \(SSE\-S3\)\. For more information on SSE\-S3, see [Protecting Data Using Server\-Side Encryption with Amazon S3\-Managed Encryption Keys \(SSE\-S3\)](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html) in the *Amazon Simple Storage Service Developer Guide\.*
++ Currently, Snowball doesn't support server\-side encryption with AWS KMS–managed keys \(SSE\-KMS\) or server\-side encryption with customer\-provided keys \(SSE\-C\)\. Snowball does support server\-side encryption with Amazon S3–managed encryption keys \(SSE\-S3\)\. For more information on SSE\-S3, see [Protecting Data Using Server\-Side Encryption with Amazon S3\-Managed Encryption Keys \(SSE\-S3\)](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html) in the *Amazon Simple Storage Service Developer Guide\.*
 + In the US regions, Snowballs come in two sizes: 50 TB and 80 TB\. All other regions have the 80 TB Snowballs only\. If you're using Snowball to import data, and you need to transfer more data than will fit on a single Snowball, create additional jobs\. Each export job can use multiple Snowballs\.
 + The default service limit for the number of Snowballs you can have at one time is 1\. If you want to increase your service limit, contact [AWS Support](https://aws.amazon.com/premiumsupport/)\.
 + All objects transferred to the Snowball have their metadata changed\. The only metadata that remains the same is `filename` and `filesize`\. All other metadata is set as in the following example: `-rw-rw-r-- 1 root root [filesize] Dec 31 1969 [path/filename]`

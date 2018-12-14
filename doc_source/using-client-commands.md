@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -29,7 +29,7 @@ You can work with files or folders with spaces in their names, like `my photo.jp
 + **Windows version of the client** – `snowball ls "s3://mybucket/My Documents/my photo.jpg"`
 
 **Note**  
-Before transferring data into Amazon S3 using Snowball, you should make sure that the files and folders that you're going to transfer are named according to the [Object Key Naming Guidelines](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-key-guidelines) for Amazon S3\. 
+Before transferring data into Amazon S3 using Snowball, you should make sure that the files and folders that you're going to transfer are named according to the [Object Key Naming Guidelines](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#object-key-guidelines) for Amazon S3\. 
 
 If you're having trouble using the Snowball client, see [Troubleshooting for a Standard Snowball](troubleshooting.md)\.
 

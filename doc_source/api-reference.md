@@ -1,6 +1,6 @@
 --------
 
-This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](http://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
+This guide is for the Snowball \(50 TB or 80 TB of storage space\)\. If you are looking for documentation for the Snowball Edge, see the [AWS Snowball Edge Developer Guide](https://docs.aws.amazon.com/snowball/latest/developer-guide/whatisedge.html)\.
 
 --------
 
@@ -17,7 +17,7 @@ The specific job management operation to which a given request maps is determine
 
 Although the operation name, such as `CreateJob`, doesn't appear on the wire, these operation names are meaningful in AWS Identity and Access Management \(IAM\) policies\. The operation name is also used to name commands in command\-line tools and elements of the AWS SDK APIs\. For example, the AWS Command Line Interface \(AWS CLI\) command `create-job` maps to the `CreateJob` operation\. The operation name also appears in CloudTrail logs for Snowball API calls\.
 
-For information on installing and setting up the AWS CLI, including specifying what regions you want to make AWS CLI calls against, see the [AWS Command Line Interface User Guide](http://docs.aws.amazon.com/cli/latest/userguide/)\.
+For information on installing and setting up the AWS CLI, including specifying what regions you want to make AWS CLI calls against, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/)\.
 
 **Note**  
 The job management API provides programmatic access to the same functionality available in the [AWS Snowball Management Console](https://console.aws.amazon.com/importexport/home?region=us-west-2), that is to create and manage jobs for Snowball\. To actually transfer data locally with a Snowball appliance, you'll need to use the Snowball client or the Amazon S3 Adapter for Snowball\. For more information, see [Transferring Data with a Snowball](using-device.md#snowball-data-transfer)\.
@@ -36,7 +36,7 @@ For example, the Snowball API endpoint for the US West \(Oregon\) Region is the 
 snowball.us-west-2.amazonaws.com
 ```
 
-For a list of AWS Regions that Snowball supports \(where you can create and manage jobs\), see [AWS Import/Export](http://docs.aws.amazon.com/general/latest/gr/rande.html#ie-region) in the *AWS General Reference*\.
+For a list of AWS Regions that Snowball supports \(where you can create and manage jobs\), see [AWS Import/Export](https://docs.aws.amazon.com/general/latest/gr/rande.html#ie-region) in the *AWS General Reference*\.
 
 The region\-specific API endpoint defines the scope of the Snowball resources that are accessible when you make an API call\. For example, when you call the `ListJobs` operation using the preceding endpoint, you get a list of jobs in the US West \(Oregon\) Region that have been created in your account\. 
 
@@ -74,7 +74,7 @@ Using the job management API to create jobs requires the following trust policy\
 ```
 
 **Note**  
-To learn more about trust policies, see [Modifying a Role](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the IAM User Guide\.
+To learn more about trust policies, see [Modifying a Role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the IAM User Guide\.
 
 **Role Policy for Creating Import Jobs**
 
@@ -170,7 +170,7 @@ If the Amazon S3 buckets that you use with Snowball have bucket policies in plac
 	}
 }
 ```
-In this policy example, we deny access to all principals except the one named in the `NotPrincipal` element\. For more information on how to use `NotPrincipal`, see [NotPrincipal](http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#NotPrincipal) in the *IAM User Guide*\.
+In this policy example, we deny access to all principals except the one named in the `NotPrincipal` element\. For more information on how to use `NotPrincipal`, see [NotPrincipal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#NotPrincipal) in the *IAM User Guide*\.
 
 ## Related Topics<a name="api-reference-related-topics"></a>
-+ [AWS Snowball API Reference](http://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)
++ [AWS Snowball API Reference](https://docs.aws.amazon.com/snowball/latest/api-reference/api-reference.html)
